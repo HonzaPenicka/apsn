@@ -2,16 +2,17 @@ import { Inter } from 'next/font/google';
 import { Header } from '@/components/header';
 import { MobileHeader } from '@/components/mobileHeader';
 import { Button } from '@/components/button';
-import { DoubleArrow } from '../../public/assets/img/icons/doubleArrow';
+import { DoubleArrow } from '../../../public/assets/img/icons/doubleArrow';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function Home() {
+export default function MobileHomePage() {
 	return (
 		<main>
-			<div></div>
 			<Header />
+
 			<MobileHeader />
+
 			<div className='px-3 py-6'>
 				<div className='text-4xl font-bold'>Investujte chytře s APSN</div>
 			</div>
