@@ -32,19 +32,19 @@ export default function MobileHomePage() {
 			<div className='text-4xl font-bold py-6 text-center'>Služby</div>
 
 			<div className='px-3 flex flex-col gap-6 pb-6'>
-				<div className='flex justify-between bg-[#EB9B6A] p-3'>
+				<div className='flex justify-between bg-[#EB9B6A] p-3 rounded-lg'>
 					<div className='text-base font-bold'>Správa nemovitostí</div>
 
 					<DoubleArrow />
 				</div>
 
-				<div className='flex justify-between bg-[#D9D9D9] p-3'>
+				<div className='flex justify-between bg-[#D9D9D9] p-3 rounded-lg'>
 					<div className='text-base font-bold'>Finanční správa</div>
 
 					<DoubleArrow />
 				</div>
 
-				<div className='flex justify-between bg-black text-white p-3'>
+				<div className='flex justify-between bg-black text-white p-3 rounded-lg'>
 					<div className='text-base font-bold'>Poradenství</div>
 
 					<DoubleArrow className='fill-white' />
@@ -165,7 +165,7 @@ export default function MobileHomePage() {
 								name='fullname'
 								id=''
 								placeholder='Jméno a příjmení'
-								className='bg-gray-300 py-3 pl-3'
+								className='bg-gray-300 py-3 pl-3 rounded-lg'
 							/>
 
 							<input
@@ -173,7 +173,7 @@ export default function MobileHomePage() {
 								name='message'
 								id=''
 								placeholder='Zpráva...'
-								className='bg-gray-300 py-9 pl-3'
+								className='bg-gray-300 h-full pl-3 rounded-lg'
 							/>
 						</div>
 
@@ -183,7 +183,7 @@ export default function MobileHomePage() {
 								name=''
 								id=''
 								placeholder='Email'
-								className='bg-gray-300 py-3 pl-3'
+								className='bg-gray-300 py-3 pl-3 rounded-lg'
 							/>
 
 							<input
@@ -191,7 +191,7 @@ export default function MobileHomePage() {
 								name=''
 								id=''
 								placeholder='Telefonní číslo'
-								className='bg-gray-300 py-3 pl-3'
+								className='bg-gray-300 py-3 pl-3 rounded-lg'
 							/>
 
 							<Button>Odeslat</Button>
