@@ -27,7 +27,7 @@ export const MobileHeader: FunctionComponent = () => {
 				</div>
 			</div>
 
-			<div className='bg-black flex justify-between items-center py-0.5'>
+			<div className='bg-black flex justify-between items-center py-1'>
 				<APSNMobile className='h-9 items-center justify-center pl-1' />
 
 				<button onClick={toggleMobileMenu}>

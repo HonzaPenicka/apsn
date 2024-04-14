@@ -1,8 +1,6 @@
 import { FunctionComponent, useCallback, useState } from 'react';
 
 import { MobileMenuServices } from './mobileMenuServices';
-import { Mail } from '../../public/assets/img/icons/mail';
-import { Phone } from '../../public/assets/img/icons/phone';
 
 export const MobileMenu: FunctionComponent = () => {
 	const [openMobileServices, setOpenMobileServices] = useState(false);
@@ -12,7 +10,7 @@ export const MobileMenu: FunctionComponent = () => {
 	}, []);
 	return (
 		<nav>
-			<div className='fixed flex flex-col gap-0.5 pb-3 text-2xl font-bold text-center px-30 bg-white w-full'>
+			<div className='fixed flex flex-col gap-1 pb-3 text-2xl font-bold text-center px-30 bg-white w-full'>
 				<a href='/' className='pt-1'>
 					Domů
 				</a>
