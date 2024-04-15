@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
 	return (
-		<main className='container mx-auto'>
+		<main>
 			<MobileHomePage />
 			<HomePage />
 		</main>
