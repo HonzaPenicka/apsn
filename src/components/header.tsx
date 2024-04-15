@@ -6,7 +6,7 @@ import { APSNDesktop } from '../../public/assets/img/icons/apsnDesktop';
 
 export const Header: FunctionComponent = () => {
 	return (
-		<div className='hidden lg:flex justify-between p-6 items-center place-items-center z-20'>
+		<div className='hidden lg:flex justify-between py-6 items-center'>
 			<APSNDesktop className='h-12' />
 			<Menu />
 			<div className='flex gap-3'>
