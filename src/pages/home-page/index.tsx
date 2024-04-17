@@ -5,15 +5,16 @@ import { OrangeWhiteArrow } from '../../../public/assets/img/icons/orange-white-
 import { Button } from '@/components/button';
 import { GrayOrangeArrow } from '../../../public/assets/img/icons/gray-orange-arrow';
 import { CrystalLogo } from '../../../public/assets/img/icons/crystalLogo';
+import { Footer } from '@/components/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function HomePage() {
 	return (
 		<>
-			<Header />
-
 			<main className='hidden lg:grid'>
+				<Header />
+
 				<div className='flex z-0'>
 					<div className='bg-[#101E28] p-48 text-white relative z-0'>
 						<div className='flex flex-col gap-6 w-3/5'>
@@ -317,15 +318,18 @@ export default function HomePage() {
 						</div>
 					</div>
 				</div>
+
 				<div className='container mx-auto flex flex-col gap-6 py-12 text-center w-2/6'>
 					<div className='text-5xl font bold'>Pomůžeme Vám ještě dnes</div>
-					<div className=''>
+
+					<div>
 						Ať už jste majitel nemovitosti, který hledá komplexní služby správy,
 						nebo nájemník hledající nový domov, jsme tu, abychom vám pomohli.
 						Kontaktujte nás ještě dnes a dovolte nám ukázat vám, jak můžeme
 						zajistit bezproblémovou cestu vaší nemovitosti.
 					</div>
 				</div>
+				<Footer />
 			</main>
 		</>
 	);

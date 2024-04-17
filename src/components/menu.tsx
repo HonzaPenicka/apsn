@@ -11,29 +11,37 @@ export const Menu: FunctionComponent = () => {
 
 	return (
 		<>
-			<div className='flex gap-6 text-lg'>
+			<nav className='flex gap-6 text-lg'>
+				<a href='/' className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>
+					Domů
+				</a>
+
+				<a href='o-nas' className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>
+					O nás
+				</a>
+
+				<a
+					href='/kontakt'
+					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
+				>
+					Kontakt
+				</a>
+
+				<a
+					href='/odhad-trzni-hodnoty'
+					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
+				>
+					Odhad tržní hodnoty
+				</a>
+
 				<button
 					onClick={toggleMenuServices}
-					className='inline-flex hover:text-[#eb9b6a] active:text-[#eb9b6a]'
+					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
 				>
-					Služby
+					Výkup
 				</button>
-				{openMenuServices && <MenuServices />}
-
-				<div className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>O nás</div>
-
-				<div className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>
-					Kontakty
-				</div>
-
-				<div className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>
-					Klienti
-				</div>
-
-				<div className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>
-					Investoři
-				</div>
-			</div>
+				<div className='relative'>{openMenuServices && <MenuServices />}</div>
+			</nav>
 		</>
 	);
 };

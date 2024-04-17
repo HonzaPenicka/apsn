@@ -8,6 +8,7 @@ import { MobileMenu } from './mobileMenu';
 
 export const MobileHeader: FunctionComponent = () => {
 	const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
 	const toggleMobileMenu = useCallback(() => {
 		setOpenMobileMenu((state) => !state);
 	}, []);

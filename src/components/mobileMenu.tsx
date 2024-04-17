@@ -10,21 +10,36 @@ export const MobileMenu: FunctionComponent = () => {
 	}, []);
 	return (
 		<nav>
-			<div className='fixed flex flex-col gap-1 pb-3 text-2xl font-bold text-center px-30 bg-white w-full'>
-				<a href='/' className='pt-1'>
+			<div className='fixed flex flex-col gap-1 pt-3 pb-6 text-2xl font-bold text-center px-30 bg-white w-full'>
+				<a href='/' className='hover:text-[#eb9b6a] active:text-[#eb9b6a] pt-1'>
 					Domů
 				</a>
 
-				<button onClick={toggleMobileServices}>Služby</button>
+				<a href='/o-nas' className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>
+					O nás
+				</a>
+
+				<a
+					href='/kontakt'
+					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
+				>
+					Kontakt
+				</a>
+
+				<a
+					href='/odhad-trzni-hodnoty'
+					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
+				>
+					Odhad tržní hodnoty
+				</a>
+
+				<button
+					onClick={toggleMobileServices}
+					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
+				>
+					Výkup
+				</button>
 				{openMobileServices && <MobileMenuServices />}
-
-				<a href='/about'>O nás</a>
-
-				<a href='/contact'>Kontakt</a>
-
-				<a href='/client'>Klient</a>
-
-				<a href='/investor'>Investor</a>
 			</div>
 		</nav>
 	);
