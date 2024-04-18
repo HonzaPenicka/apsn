@@ -34,13 +34,15 @@ export const Menu: FunctionComponent = () => {
 					Odhad tržní hodnoty
 				</a>
 
-				<button
-					onClick={toggleMenuServices}
-					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
-				>
-					Výkup
-				</button>
-				<div className='relative'>{openMenuServices && <MenuServices />}</div>
+				<div>
+					<button
+						onClick={toggleMenuServices}
+						className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
+					>
+						Výkup
+					</button>
+					<div className='relative'>{openMenuServices && <MenuServices />}</div>
+				</div>
 			</nav>
 		</>
 	);

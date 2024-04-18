@@ -26,6 +26,9 @@ export default function AboutUs() {
 						spolehnout, že spravujeme vaši nemovitost efektivně a transparentně
 						a zajistíme, že vaše investice bude v dobrých rukou.
 					</div>
+					<div className='pt-6 lg:pt-12 justify-center text-center'>
+						<Button>Vyplňte formulář</Button>
+					</div>
 				</div>
 			</div>
 

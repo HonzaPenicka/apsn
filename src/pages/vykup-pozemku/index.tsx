@@ -6,7 +6,7 @@ import { MobileHeader } from '@/components/mobileHeader';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function BuildingsToBuy() {
+export default function LandToBuy() {
 	return (
 		<>
 			<Header />
@@ -16,17 +16,15 @@ export default function BuildingsToBuy() {
 			<div className='py-6 lg:py-12 bg-[#F2F2F2] px-3'>
 				<div className='container mx-auto flex flex-col gap-6 lg:gap-12'>
 					<div className='text-4xl font-bold text-center'>
-						Výkup nemovitostí: Vykoupíme byt, dům i pozemek
+						Vykoupíme váš pozemek
 					</div>
 
 					<div className='text-center'>
-						V APSN jsme odhodláni poskytovat vám služby odborné správy
-						nemovitostí, které maximalizují hodnotu vaší investice do
-						nemovitosti. S osobním přístupem, který klade důraz na integritu,
-						vynikající zákaznický servis a inovativní technologie, se postaráme
-						o vše, od inkasa nájemného po údržbu a leasing. Můžete se
-						spolehnout, že spravujeme vaši nemovitost efektivně a transparentně
-						a zajistíme, že vaše investice bude v dobrých rukou.
+						Koupíme Váš pozemek nemovitost přímo, bez zprostředkování realitní
+						kanceláře Proces prodeje pozemku může být dlouhý a složitý. Nalezení
+						kupce a dohoda o ceně a dalších podmínkách může trvat až rok. V APSN
+						vám nabízíme odkup nemovitosti během 24 hodin. Kupujeme přímo byty i
+						domy, nepůsobíme jako realitní agentury, ale jako přímí kupci.
 					</div>
 				</div>
 				<div className='pt-6 lg:pt-12 justify-center text-center'>
@@ -90,14 +88,14 @@ export default function BuildingsToBuy() {
 
 				<div className='flex flex-col gap-6 pt-6 lg:pt-12'>
 					<div className='text-4xl font-bold'>
-						Jak funguje přímý výkup nemovitosti s APSN?
+						Jak probíhá přímý odkup s APSN?
 					</div>
 
-					<div>Začínáte vy. Vyplňte formulář na této stránce.</div>
+					<div>Začnete vy tím, že vyplníte formulář na našem webu.</div>
 
 					<div>
-						Míč je na naší straně. Náš APSN specialista se vám ozve a společně
-						se domluvíte, jak budete dále postupovat.
+						Následně vás kontaktuje náš specialista a domluvíte se na dalším
+						postupu.
 					</div>
 
 					<div>
@@ -106,56 +104,35 @@ export default function BuildingsToBuy() {
 					</div>
 
 					<div>
-						Nudnou, ale nezbytnou administrativu nechte na nás, postaráme se o
-						to.
+						Připravíme pro vás individuální řešení a cenovou nabídku. Rozmyslete
+						si, jak s penězi naložíte.
+					</div>
+
+					<div>Zbytek administrativy nechte na nás, my se o vše postaráme.</div>
+
+					<div>
+						Po podepsání smlouvy vám okamžitě vyplatíme zálohu nebo kupní cenu.
 					</div>
 
 					<div>
-						Podepisujeme! S podpisem smlouvy dostanete zálohu / část kupní ceny
-						/ kupní cenu bez zbytečných prodlení.
+						Nemovitost je prodána a my vám vyplatíme zbytek dohodnuté sumy.
 					</div>
-
-					<div>Máte prodáno a my vám vyplatíme zbytek dohodnuté ceny.</div>
 				</div>
 
-				<div className='flex flex-col gap-6'>
+				<div className='flex flex-col gap-6 pb-6 lg:pb-12'>
 					<div className='text-4xl font-bold'>
-						Vaši nemovitost odkoupíme napřímo, nejsme realitní kancelář
+						Vše vám podrobně a bezplatně vysvětlíme
 					</div>
 
 					<div>
-						Prodej nemovitosti je běh na dlouhou trať. Než seženete kupce,
-						domluvíte se na ceně a dalších podmínkách, uběhne i rok.
-						<b className='text-[#eb9b6a]'>
-							V APSN odkoupíme vaši nemovitost za 24 hodin.{' '}
-						</b>
-						Vykoupíme váš byt nebo dům napřímo. Nejsme zprostředkovatelé jako
-						realitní kanceláře, jsme přímí kupci.
+						Dejte nám vědět o vaší situaci s nemovitostí pomocí našeho
+						kontaktního formuláře, a my vám obratem zašleme nabídku a
+						vysvětlíme, jak bude proces výkupu probíhat.
 					</div>
-				</div>
 
-				<div className='pb-6 lg:pb-12'>
-					<div className='flex flex-col gap-6'>
-						<div className='text-4xl font-bold text-center'>
-							Vše vám zdarma vysvětlíme
-						</div>
-
-						<div>
-							Popište nám nezávazně situaci s vaší nemovitostí a my vám obratem
-							zašleme návrh řešení a cenovou nabídku. Představíme vám, jak výkup
-							bytu nebo domu probíhá, abyste měli přesnou představu o tom, co se
-							bude dít. Jednoduše a přehledně. Stačí si přečíst recenze
-							spokojených zákazníků.
-						</div>
-
-						<div>
-							Čekáme na vaši nezávaznou zprávu v{' '}
-							<b className='text-[#eb9b6a]'>kontaktním formuláři.</b>
-						</div>
-
-						<div className=' font-bold text-[#eb9b6a]'>
-							SMLOUVA NA NEMOVITOST - VZOR
-						</div>
+					<div>
+						Čekáme na vaši nezávaznou zprávu v{' '}
+						<b className='text-[#eb9b6a]'>kontaktním formuláři</b>.
 					</div>
 				</div>
 			</main>

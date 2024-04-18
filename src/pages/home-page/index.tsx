@@ -50,7 +50,7 @@ export default function HomePage() {
 							<div className='flex flex-col gap-9 p-12'>
 								<BlackWhiteArrow />
 
-								<div className='text-4xl font-medium'>Správa nemovitostí</div>
+								<div className='text-4xl font-medium'>Výkup nemovitostí</div>
 
 								<div className='text-lg'>
 									<ul>
@@ -75,7 +75,7 @@ export default function HomePage() {
 							<div className='flex flex-col gap-9 p-12'>
 								<OrangeWhiteArrow />
 
-								<div className='text-4xl font-medium'>Finanční správa</div>
+								<div className='text-4xl font-medium'>Výkup pozemků</div>
 
 								<div className='text-lg'>
 									<ul>
@@ -100,7 +100,7 @@ export default function HomePage() {
 							<div className='flex flex-col gap-9 p-12'>
 								<GrayOrangeArrow />
 
-								<div className='text-4xl font-medium'>Finanční správa</div>
+								<div className='text-4xl font-medium'>Výkup</div>
 
 								<div className='text-lg'>
 									<ul>

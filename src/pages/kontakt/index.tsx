@@ -34,6 +34,9 @@ export default function Contact() {
 						vyhovovala jedinečným potřebám každého klienta.
 					</div>
 				</div>
+				<div className='pt-6 lg:pt-12 justify-center text-center'>
+					<Button>Vyplňte formulář</Button>
+				</div>
 			</div>
 
 			<main className='container mx-auto px-3 flex flex-col gap-6 lg:gap-12'>
