@@ -22,7 +22,7 @@ export default function Contact() {
 
 			<MobileHeader />
 
-			<div className='py-6 lg:pb-12 bg-[#F2F2F2] px-3 pt-48'>
+			<div className='py-6 lg:pb-12 bg-[#F2F2F2] px-3 mt-36'>
 				<div className='container mx-auto'>
 					<div className='flex flex-col gap-6 lg:gap-12 lg:px-24 text-left lg:text-center'>
 						<div className='text-4xl font-bold'>Seznamte se s našim týmem</div>
