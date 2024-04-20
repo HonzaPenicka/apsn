@@ -4,103 +4,132 @@ import { Button } from '@/components/button';
 import { CrystalLogo } from '../../../public/assets/img/icons/crystalLogo';
 import { Footer } from '@/components/footer';
 import { MobileHeader } from '@/components/mobileHeader';
+import { useRef } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Contact() {
+	const footerRef = useRef<HTMLDivElement>(null!);
+
+	const handleButtonClick = () => {
+		if (footerRef.current) {
+			footerRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 	return (
 		<>
 			<Header />
 
 			<MobileHeader />
 
-			<div className='py-6 lg:py-12 bg-[#F2F2F2] px-3'>
-				<div className='container mx-auto flex flex-col gap-6 lg:gap-12 '>
-					<div className='text-4xl font-bold text-center'>
-						Seznamte se s našim týmem
-					</div>
+			<div className='py-6 lg:pb-12 bg-[#F2F2F2] px-3 pt-48'>
+				<div className='container mx-auto'>
+					<div className='flex flex-col gap-6 lg:gap-12 lg:px-24 text-left lg:text-center'>
+						<div className='text-4xl font-bold'>Seznamte se s našim týmem</div>
 
-					<div className='text-center'>
-						Vítejte v APSN, moderní, dynamické a na zákazníka zaměřené agentuře
-						správy nemovitostí. Specializujeme se na komplexní správu
-						nemovitostí, údržbu, leasing a finanční služby, jejichž cílem je
-						zbavit vlastníky nemovitostí všech starostí a zároveň maximalizovat
-						hodnotu jejich investic. Náš přístup je založen na transparentnosti,
-						poctivosti a solidní komunikaci, což nám umožňuje budovat dlouhodobé
-						vztahy s našimi klienty. Naše inovativní využití nejnovějších
-						technologií v oblasti správy nemovitostí nás řadí na přední místo v
-						oboru. Náš tým zkušených a znalých profesionálů se věnuje
-						poskytování personalizované a odborné pomoci, šité na míru tak, aby
-						vyhovovala jedinečným potřebám každého klienta.
+						<div>
+							Vítejte v APSN, moderní, dynamické a na zákazníka zaměřené
+							agentuře správy nemovitostí. Specializujeme se na komplexní správu
+							nemovitostí, údržbu, leasing a finanční služby, jejichž cílem je
+							zbavit vlastníky nemovitostí všech starostí a zároveň
+							maximalizovat hodnotu jejich investic. Náš přístup je založen na
+							transparentnosti, poctivosti a solidní komunikaci, což nám
+							umožňuje budovat dlouhodobé vztahy s našimi klienty. Naše
+							inovativní využití nejnovějších technologií v oblasti správy
+							nemovitostí nás řadí na přední místo v oboru. Náš tým zkušených a
+							znalých profesionálů se věnuje poskytování personalizované a
+							odborné pomoci, šité na míru tak, aby vyhovovala jedinečným
+							potřebám každého klienta.
+						</div>
 					</div>
 				</div>
-				<div className='pt-6 lg:pt-12 justify-center text-center'>
-					<Button>Vyplňte formulář</Button>
+				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
+					<Button onClick={handleButtonClick}>Vyplňte formulář</Button>
 				</div>
 			</div>
+			<main className='container mx-auto px-3'>
+				<div className='pt-6 lg:pt-12 text-left'>
+					<div className='flex flex-col lg:grid lg:grid-cols-2 gap-12'>
+						<div className='gap-6 flex flex-col py-6 px-12 border-2 rounded-lg'>
+							<CrystalLogo />
+							<div>
+								S více než 6 lety zkušeností v oblasti nemovitostí, Jan je
+								vizionář, který ASPN vedl k výšinám úspěchu. Jeho hluboké
+								porozumění trhu a vášeň pro kvalitu služeb jsou základem naší
+								agentury.
+							</div>
+							<div className='flex justify-between'>
+								<div className='flex gap-6'>
+									<img
+										src='/assets/img/pics/jirka.jpg'
+										alt='jednatel Jirka'
+										className='rounded-full'
+									/>
+									<div className='flex flex-col text-left'>
+										<div className='font-bold'>Jirka Krupička</div>
 
-			<main className='container mx-auto px-3 flex flex-col gap-6 lg:gap-12'>
-				<div className='flex flex-col lg:grid lg:grid-cols-2 gap-12 py-6 lg:py-12'>
-					<div className='gap-6 flex flex-col py-6 px-12 border-2'>
-						<CrystalLogo />
-
-						<div>
-							S více než 6 lety zkušeností v oblasti nemovitostí, Jan je
-							vizionář, který ASPN vedl k výšinám úspěchu. Jeho hluboké
-							porozumění trhu a vášeň pro kvalitu služeb jsou základem naší
-							agentury.
-						</div>
-
-						<div className='flex justify-between'>
-							<div className='flex gap-6'>
-								<img src='/assets/img/pics/jirka.jpg' alt='jednatel Jirka' />
-
-								<div className='flex flex-col justify-center'>
-									<div className='font-bold'>Jirka Krupička</div>
-
-									<div>jednatel</div>
+										<div>jednatel</div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<Button>Sjednat schůzku</Button>
-					</div>
-
-					<div className='gap-6 flex flex-col py-6 px-12 border-2'>
-						<CrystalLogo />
-
-						<div>
-							S více než 6 lety zkušeností v oblasti nemovitostí, Jan je
-							vizionář, který ASPN vedl k výšinám úspěchu. Jeho hluboké
-							porozumění trhu a vášeň pro kvalitu služeb jsou základem naší
-							agentury.
+							<a href='mailto:krupicka.jiri@aspn.cz'>
+								<Button>Sjednat schůzku</Button>
+							</a>
 						</div>
 
-						<div className='flex justify-between'>
-							<div className='flex gap-6'>
-								<img src='/assets/img/pics/jirka.jpg' alt='jednatel Jirka' />
+						<div className='gap-6 flex flex-col py-6 px-12 border-2 rounded-lg'>
+							<CrystalLogo />
 
-								<div className='flex flex-col justify-center'>
-									<div className='font-bold'>Gabriel Radovský</div>
+							<div>
+								S více než 6 lety zkušeností v oblasti nemovitostí, Jan je
+								vizionář, který ASPN vedl k výšinám úspěchu. Jeho hluboké
+								porozumění trhu a vášeň pro kvalitu služeb jsou základem naší
+								agentury.
+							</div>
 
-									<div>jednatel</div>
+							<div className='flex justify-between'>
+								<div className='flex gap-6'>
+									<img
+										src='/assets/img/pics/jirka.jpg'
+										alt='jednatel Gabriel'
+										className='rounded-full'
+									/>
+
+									<div className='flex flex-col text-left'>
+										<div className='font-bold'>Gabriel Radovský</div>
+
+										<div>jednatel</div>
+									</div>
 								</div>
 							</div>
+							<a href='mailto:radovsky.gabriel@aspn.cz'>
+								<Button>Sjednat schůzku</Button>
+							</a>
 						</div>
-						<Button>Sjednat schůzku</Button>
-					</div>
-				</div>
-
-				<div className='flex flex-col gap-6 lg-gap-12 text-center pb-6 lg:pb-12'>
-					<div className='text-4xl font-bold'>Pomůžeme Vám ještě dnes</div>
-					<div>
-						Ať už jste majitel nemovitosti, který hledá komplexní služby správy,
-						nebo nájemník hledající nový domov, jsme tu, abychom vám pomohli.
-						Kontaktujte nás ještě dnes a dovolte nám ukázat vám, jak můžeme
-						zajistit bezproblémovou cestu vaší nemovitosti.
 					</div>
 				</div>
 			</main>
-			<Footer />
+			<div className='container mx-auto px-3'>
+				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
+					<div className='lg:px-12'>
+						<div className='pt-6 lg:pt-0 text-3xl font-bold'>
+							Pomůžeme Vám ještě dnes
+						</div>
+
+						<div className='py-6 lg:py-12'>
+							Popište nám nezávazně situaci s Vaší nemovitostí a my Vám obratem
+							zašleme návrh řešení a cenovou nabídku. Představíme Vám, ja výkup
+							bytu nebo domu probíhá, abyste měli přesnou představu o tom, co se
+							bude dít. Jednoduše a přehledně. Stačí si přečíst recenze
+							spokojených zákazníků.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div ref={footerRef}>
+				<Footer />
+			</div>
 		</>
 	);
 }

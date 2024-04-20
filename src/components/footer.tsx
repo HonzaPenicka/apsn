@@ -6,6 +6,7 @@ import { BigLogo } from '../../public/assets/img/icons/big-logo';
 import { LinkedIn } from '../../public/assets/img/icons/linked-In';
 import { Facebook } from '../../public/assets/img/icons/facebook';
 import { Youtube } from '../../public/assets/img/icons/youtube';
+import { Instagram } from '../../public/assets/img/icons/instagram';
 
 export const Footer: FunctionComponent = () => {
 	return (
@@ -61,39 +62,53 @@ export const Footer: FunctionComponent = () => {
 
 						<div className='grid'>
 							<div className='flex flex-col gap-3 font-bold'>
-								<div className='flex gap-3'>
-									<Phone />
+								<div className='flex flex-col lg:flex-row justify-between text-xl'>
+									<div className='flex gap-3'>
+										<Mail />
 
-									<a href='tel:+420111222333'>+420 111 222 333</a>
-								</div>
+										<a href='mailto:info@apsn.cz'>info@apsn.cz</a>
+									</div>
 
-								<div className='flex gap-3'>
-									<Mail />
+									<div className='flex gap-3'>
+										<Phone />
 
-									<a href='mailto:info@apsn.cz'>info@apsn.cz</a>
+										<a href='tel:+420111222333'>+420 111 222 333</a>
+									</div>
 								</div>
 
 								<div className='flex justify-between py-3'>
 									<div className='flex flex-col gap-0.5'>
 										<div className='font-bold'>Jiří Krupička</div>
 
-										<div className='font-normal'>+420 773 007 171</div>
+										<div className='font-normal'>
+											<a href='tel:+420773007171'>+420 773 007 171</a>
+										</div>
 
-										<div className='font-normal'>krupicka.jiri@aspn.cz</div>
+										<div className='font-normal'>
+											<a href='mailto:krupicka.jiri@aspn.cz'>
+												krupicka.jiri@aspn.cz
+											</a>
+										</div>
 									</div>
 
 									<div className='flex flex-col gap-0.5'>
 										<div className='font-bold'>Gabriel Radovský</div>
 
-										<div className='font-normal'>+420 773 007 171</div>
+										<div className='font-normal'>
+											<a href='tel:+420725890879'>+420 725 890 879</a>
+										</div>
 
-										<div className='font-normal'>krupicka.jiri@aspn.cz</div>
+										<div className='font-normal'>
+											<a href='mailto:radovsky.gabriel@aspn.cz'>
+												radovsky.gabriel@aspn.cz
+											</a>
+										</div>
 									</div>
 								</div>
 
-								<div className='relative pb-3'>
+								<div className='relative pb-3 rounded-lg'>
 									<iframe
-										className='w-full h-72 lg:h-80'
+										className='w-full h-72 lg:h-80 ring-0 rounded-lg'
 										src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7803854782765!2d14.457184876739312!3d50.071674414563994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b937bee2498e9%3A0xf9c14829f5456a67!2sBulharsk%C3%A1%20996%2F20%2C%20101%2000%20Praha%2010-Vr%C5%A1ovice!5e0!3m2!1scs!2scz!4v1713052106847!5m2!1scs!2scz'
 										loading='lazy'
 									></iframe>
@@ -109,12 +124,16 @@ export const Footer: FunctionComponent = () => {
 					<BigLogo className='w-full' />
 				</div>
 
-				<div className='flex gap-24 items-center justify-center'>
+				<div className='flex px-3 gap-12 lg:gap-24 items-center justify-center'>
 					<LinkedIn />
 
 					<Facebook />
 					<div className='pt-3'>
 						<Youtube className='' />
+					</div>
+
+					<div>
+						<Instagram />
 					</div>
 				</div>
 			</div>

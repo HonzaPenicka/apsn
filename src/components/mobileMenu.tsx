@@ -10,7 +10,7 @@ export const MobileMenu: FunctionComponent = () => {
 	}, []);
 	return (
 		<nav>
-			<div className='fixed flex flex-col gap-1 pt-3 pb-6 text-2xl font-bold text-center px-30 bg-white w-full'>
+			<div className='fixed flex flex-col gap-1 pt-3 pb-6 text-2xl font-bold text-center bg-white w-full'>
 				<a href='/' className='hover:text-[#eb9b6a] active:text-[#eb9b6a] pt-1'>
 					Domů
 				</a>

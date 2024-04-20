@@ -3,120 +3,85 @@ import { Header } from '@/components/header';
 import { Button } from '@/components/button';
 import { Footer } from '@/components/footer';
 import { MobileHeader } from '@/components/mobileHeader';
+import { useRef } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function AboutUs() {
+	const footerRef = useRef<HTMLDivElement>(null!);
+
+	const handleButtonClick = () => {
+		if (footerRef.current) {
+			footerRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 	return (
 		<>
 			<Header />
 
 			<MobileHeader />
 
-			<div className='py-6 lg:py-12 bg-[#F2F2F2] px-3'>
-				<div className='container mx-auto flex flex-col gap-6 lg:gap-12'>
-					<div className='text-4xl font-bold text-center'>O nás</div>
+			<div className='py-6 lg:py-12 bg-[#F2F2F2] px-3 mt-36'>
+				<div className='container mx-auto'>
+					<div className='flex flex-col gap-6 lg:gap-12 lg:px-24 text-left lg:text-center'>
+						<div className='text-4xl font-bold'>O nás</div>
 
-					<div className='text-center'>
-						V APSN jsme odhodláni poskytovat vám služby odborné správy
-						nemovitostí, které maximalizují hodnotu vaší investice do
-						nemovitosti. S osobním přístupem, který klade důraz na integritu,
-						vynikající zákaznický servis a inovativní technologie, se postaráme
-						o vše, od inkasa nájemného po údržbu a leasing. Můžete se
-						spolehnout, že spravujeme vaši nemovitost efektivně a transparentně
-						a zajistíme, že vaše investice bude v dobrých rukou.
+						<div>
+							V APSN jsme odhodláni poskytovat vám služby odborné správy
+							nemovitostí, které maximalizují hodnotu vaší investice do
+							nemovitosti. S osobním přístupem, který klade důraz na integritu,
+							vynikající zákaznický servis a inovativní technologie, se
+							postaráme o vše, od inkasa nájemného po údržbu a leasing. Můžete
+							se spolehnout, že spravujeme vaši nemovitost efektivně a
+							transparentně a zajistíme, že vaše investice bude v dobrých rukou.
+						</div>
 					</div>
-					<div className='pt-6 lg:pt-12 justify-center text-center'>
-						<Button>Vyplňte formulář</Button>
-					</div>
+				</div>
+				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
+					<Button onClick={handleButtonClick}>Vyplňte formulář</Button>
 				</div>
 			</div>
 
-			<main className='container mx-auto px-3 flex flex-col lg:grid lg:grid-cols-2 text-center gap-6 lg:gap-12'>
-				<div className='flex flex-col gap-6 lg:gap-6 pt-6 lg:pt-12'>
-					<div className='text-4xl font-bold'>
-						Jsme váš spolehlivý partner pro prodej a výkup nemovitostí a
-						spoluvlastnických podílů
-					</div>
-
-					<div>S námi nesháníte kupce a neřešíte zdlouhavý prodej.</div>
-
-					<div>
-						Zabýváme se
-						<b className='text-[#eb9b6a]'> investicemi do nemovitostí</b> a
-						spoluvlastnických podílů po celé České republice. Naší prioritou je
-						individuální přístup, kvalitní zákaznický servis a garance férové
-						ceny.
-					</div>
-
-					<div>
-						Jsme zkušení profesionálové a celý proces odkupu je s námi vždy
-						maximálně transparentní a diskrétní. Provedeme vás všemi možnostmi,
-						které se nabízí, a ujistíme se, že si navzájem rozumíme.{' '}
-					</div>
-				</div>
-
-				<div className='flex flex-col gap-6 pt-3 lg:pt-6'>
-					<div className='text-4xl font-bold lg:pt-6'>
-						Pokud spěcháte, prodej dokážeme zvládnout i do 24 hodin
-					</div>
-
-					<div>
-						Na trhu s nemovitostmi vám už čtyři roky pomáháme získat za své
-						nemovitosti vždy férové peníze.
-					</div>
-
-					<ul className='list-disc list-inside flex flex-col gap-1 lg:gap-3'>
-						<div className='text-xl font-bold'>
-							Nezastavíme se ani před nemovitostmi s právními vadami, jako jsou:
-						</div>
-						<li className='lg:text-left'>věcná břemena</li>
-						<li className='lg:text-left'>nemovitosti zatížené insolvencí</li>
-						<li className='lg:text-left'>zástavním právem</li>
-						<li className='lg:text-left'>exekučními příkazy</li>
-						<li className='lg:text-left'>
-							nemovitosti s nedostatečně identifikovatelnými vlastníky či
-							spoluvlastníky trvale žijícími mimo ČR
-						</li>
-						<li className='lg:text-left'>
-							nemovitosti zatížené zdlouhavými dědickými spory
-						</li>
-						<li className='lg:text-left'>
-							nemovitosti ve vlastnictví nesvéprávných či nezletilých osob
-							(opatrovnický soud)
-						</li>
-					</ul>
-				</div>
-
-				<div className='flex flex-col gap-6'>
-					<div className='text-4xl font-bold'>Konzultace s námi je zdarma</div>
-
-					<div>
-						Veškeré informace od nás dostanete přehledně předem, vše vám
-						vysvětlíme a navrhneme ty nejvhodnější varianty řešení.
-					</div>
-
-					<div>
-						Náš tým profesionálů je připraven vám plně asistovat a srozumitelně
-						vás provést celým prodejem a odkoupením. Nejraději pracujeme v
-						příjemné přátelské atmosféře, rychle a spolehlivě.
-					</div>
-				</div>
-
-				<div className='pb-6 lg:pb-12 px-3'>
-					<div className='flex flex-col gap-6 lg:gap-12'>
-						<div className='text-4xl font-bold text-center'>
-							Potřebujete co nejdřív a bezstarostně prodat nemovitost?
+			<main className='container mx-auto px-3'>
+				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
+					<div className='lg:px-12'>
+						<div className='text-3xl font-bold'>
+							APSN: Váš důvěryhodný partner ve správě majetku
 						</div>
 
-						<div className='items-center justify-center text-center'>
-							<Button>Napsat nezávazně</Button>
+						<div className='flex flex-col lg:grid lg:grid-cols-2 text-left gap-6 lg:gap-12 lg:py-12'>
+							<div className='pt-6 lg:pt-0'>
+								Jsme renomovaná firma specializující se na výkup a správu
+								nemovitostí, pozemků a podílů na nemovitostech. Naší prioritou
+								je poskytovat našim klientům komplexní a profesionální služby,
+								které usnadňují investice do realit a zajišťují jejich
+								bezproblémové řízení. Díky našemu týmu odborníků a rozsáhlé
+								znalosti trhu jsme schopni nabídnout řešení šitá na míru
+								potřebám každého klienta. Naše úsilí je vždy zaměřeno na
+								dosažení nejlepších výsledků a maximálního zhodnocení Vašich
+								investic.
+							</div>
+							<img src='/assets/img/pics/team.jpg' alt='team' />
+						</div>
+
+						<div className='pt-6 lg:pt-0 text-3xl font-bold'>
+							Pomůžeme Vám ještě dnes
+						</div>
+
+						<div className='py-6 lg:py-12'>
+							Popište nám nezávazně situaci s Vaší nemovitostí a my Vám obratem
+							zašleme návrh řešení a cenovou nabídku. Představíme Vám, ja výkup
+							bytu nebo domu probíhá, abyste měli přesnou představu o tom, co se
+							bude dít. Jednoduše a přehledně. Stačí si přečíst recenze
+							spokojených zákazníků.
 						</div>
 					</div>
 				</div>
 			</main>
 
-			<Footer />
+			<div ref={footerRef}>
+				<Footer />
+			</div>
 		</>
 	);
 }

@@ -3,38 +3,48 @@ import { Header } from '@/components/header';
 import { Button } from '@/components/button';
 import { Footer } from '@/components/footer';
 import { MobileHeader } from '@/components/mobileHeader';
+import { useRef } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function EstimateOfMarketValue() {
+	const footerRef = useRef<HTMLDivElement>(null!);
+
+	const handleButtonClick = () => {
+		if (footerRef.current) {
+			footerRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 	return (
 		<>
 			<Header />
 
 			<MobileHeader />
 
-			<div className='py-6 lg:py-12 bg-[#F2F2F2] px-3'>
-				<div className='container mx-auto flex flex-col gap-6 lg:gap-12'>
-					<div className='text-4xl font-bold text-center'>
-						Odhad ceny nemovitosti nebo spoluvlastnického podílu
-					</div>
+			<div className='py-6 lg:py-12 bg-[#F2F2F2] px-3 mt-36'>
+				<div className='container mx-auto'>
+					<div className='flex flex-col gap-6 lg:gap-12 lg:px-24 text-left lg:text-center'>
+						<div className='text-4xl font-bold'>
+							Odhad ceny nemovitosti nebo spoluvlastnického podílu
+						</div>
 
-					<div className='text-center'>
-						Odhad ceny nemovitosti nebo spoluvlastnického podílu online zdarma.
-						Připravíme pro vás nezávaznou nabídku, stačí vyplnit formulář a my
-						se vám ozveme. Můžete nás také kontaktovat na tel. čísle{' '}
-						<b className='text-[#eb9b6a]'>732 717 314</b> nebo e-mailu{' '}
-						<b className='text-[#eb9b6a]'>info@miestate.cz</b>. Obchody úspěšně
-						realizujeme ke spokojenosti našich klientů. Rádi i pro vás najdeme
-						to nejlepší možné řešení.
+						<div>
+							Odhad ceny nemovitosti nebo spoluvlastnického podílu online
+							zdarma. Připravíme pro vás nezávaznou nabídku, stačí vyplnit
+							formulář a my se vám ozveme. Můžete nás také kontaktovat na tel.
+							čísle <b className='text-[#eb9b6a]'>+420 111 222 333</b> nebo
+							e-mailu <b className='text-[#eb9b6a]'>info@apsn.cz</b>. Obchody
+							úspěšně realizujeme ke spokojenosti našich klientů. Rádi i pro vás
+							najdeme to nejlepší možné řešení.
+						</div>
 					</div>
 				</div>
-				<div className='pt-6 lg:pt-12 justify-center text-center'>
-					<Button>Vyplňte formulář</Button>
+				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
+					<Button onClick={handleButtonClick}>Vyplňte formulář</Button>
 				</div>
 			</div>
 
-			<main className='container mx-auto px-3 flex flex-col lg:grid lg:grid-cols-2 text-center gap-6 lg:gap-12'>
+			<main className='container mx-auto px-3 flex flex-col lg:grid lg:grid-cols-2 text-left lg:text-center gap-6 lg:gap-12'>
 				<div className='flex flex-col gap-6 pt-3 lg:pt-6'>
 					<div className='text-4xl font-bold lg:pt-6'>
 						Odhad ceny nemovitosti nebo spoluvlastnického podílu online
@@ -60,7 +70,7 @@ export default function EstimateOfMarketValue() {
 				</div>
 
 				<div className=' py-6 lg:py-12'>
-					<div className='flex flex-col gap-6 text-left border-4 rounded-lg p-3 bg-[#F2F2F2]'>
+					<div className='flex flex-col gap-6 text-left border-4 rounded-lg p-3 lg:p-6 bg-[#F2F2F2]'>
 						<div className='grid grid-cols-2 gap-6 lg:gap-12'>
 							<div className='text-xl flex items-center'>Typ nemovitosti</div>
 
@@ -155,7 +165,9 @@ export default function EstimateOfMarketValue() {
 				</div>
 			</main>
 
-			<Footer />
+			<div ref={footerRef}>
+				<Footer />
+			</div>
 		</>
 	);
 }

@@ -3,156 +3,182 @@ import { Header } from '@/components/header';
 import { Button } from '@/components/button';
 import { Footer } from '@/components/footer';
 import { MobileHeader } from '@/components/mobileHeader';
+import { useRef } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function PercentToBuy() {
+	const footerRef = useRef<HTMLDivElement>(null!);
+
+	const handleButtonClick = () => {
+		if (footerRef.current) {
+			footerRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 	return (
 		<>
 			<Header />
-
 			<MobileHeader />
+			<div className='py-6 lg:py-12 bg-[#F2F2F2] px-3 mt-36'>
+				<div className='container mx-auto'>
+					<div className='flex flex-col gap-6 lg:gap-12 lg:px-24 text-left lg:text-center'>
+						<div className='text-4xl font-bold'>Výkup podílů</div>
 
-			<div className='py-6 lg:py-12 bg-[#F2F2F2] px-3'>
-				<div className='container mx-auto flex flex-col gap-6 lg:gap-12'>
-					<div className='text-4xl font-bold text-center'>
-						Vykoupíme váš spoluvlastnický podíl na nemovitosti
-					</div>
-
-					<div className='text-center'>
-						Specializujeme se na odkup spoluvlastnických podílů na
-						nemovitostech. Ty jsou velmi často výsledkem dědického řízení.
-						Zděděná nemovitost se rozdělí na ideální podíly, které připadnou
-						každému dědici. A protože{' '}
-						<b className='text-[#eb9b6a]'>
-							§ 1117 Občanského zákoníku č. 89/2012
-						</b>
-						říká, že má každý spoluvlastník právo k celé věci, je jasné, že je
-						<b>podílové spoluvlastnictví velmi často problémové.</b>
+						<div>
+							Specializujeme se na nákup spoluvlastnických podílů na
+							nemovitostech, často výsledkem dědických řízení. Po rozdělení
+							nemovitosti mezi dědice každý obdrží ideální podíl.{' '}
+							<b>Podle § 1117 Občanského zákoníku č. 89/2012</b> má každý
+							spoluvlastník právo na celou věc, což činí spoluvlastnictví často
+							problematické.
+						</div>
 					</div>
 				</div>
-				<div className='pt-6 lg:pt-12 justify-center text-center'>
-					<Button>Vyplňte formulář</Button>
+				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
+					<Button onClick={handleButtonClick}>Vyplňte formulář</Button>
 				</div>
 			</div>
-
-			<main className='container mx-auto px-3 flex flex-col lg:grid lg:grid-cols-2 text-center gap-6 lg:gap-12 lg:pb-12'>
-				<div className='flex flex-col gap-6 pt-6 lg:pt-12'>
-					<div className='text-4xl font-bold'>
-						Prodejte nám váš spoluvlastnický podíl
-					</div>
-
-					<div>O vše se postaráme. Ušetříme váš čas i starosti.</div>
-
-					<div>
-						Máme zkušenosti se složitými případy, dbáme na zájmy dalších
-						spoluvlastníků. Víme totiž, že je důležité najít společnou řeč a
-						vzájemně se domluvit.
-					</div>
-
-					<div>
-						Pokud vlastníte minoritní podíl a přemýšlíte o jeho prodeji, rádi
-						pro vás připravíme nezávaznou cenovou nabídku.
-					</div>
-				</div>
-
-				<div>
-					<div className='text-4xl font-bold pt-6 lg:pt-12'>
-						Nemáte zrovna ideální spoluvlastnický podíl? Poradíme si i se
-						složitými případy
-					</div>
-
-					<div className='text-xl font-bold pt-3 lg:pt-6'>
-						Bez problému odkoupíme také spoluvlastnický podíl na nemovitosti
-						zatížené právními vadami, jako jsou:
-					</div>
-
-					<ul className='list-disc list-inside flex flex-col gap-1'>
-						<li className='lg:text-left'>věcná břemena</li>
-						<li className='lg:text-left'>nemovitosti zatížené insolvencí</li>
-						<li className='lg:text-left'>zástavním práva</li>
-						<li className='lg:text-left'>exekuční příkazy</li>
-						<li className='lg:text-left'>
-							nemovitosti s nedostatečně identifikovatelnými vlastníky či
-							spoluvlastníky trvale žijícími mimo ČR
-						</li>
-						<li className='lg:text-left'>
-							nemovitosti zatížené zdlouhavými dědickými spory
-						</li>
-						<li className='lg:text-left'>
-							nemovitosti ve vlastnictví nesvéprávných či nezletilých osob
-							(opatrovnický soud)
-						</li>
-					</ul>
-
-					<div className='pt-3 lg:pt-6'>
-						Celý proces prodeje podílů se zjednodušil díky zmiňované novele
-						občanského zákoníku, která omezuje předkupní právo pro
-						spoluvlastníky při převodu podílu na nemovitosti. Prodat
-						spoluvlastnický podíl je tak mnohem jednodušší než v minulosti.
-					</div>
-				</div>
-
-				<div className='flex flex-col gap-6 pt-6 lg:pt-12'>
-					<div className='text-4xl font-bold'>
-						Jak funguje výkup spoluvlastnického podílu s APSN?
-					</div>
-
-					<div>Začínáte vy. Vyplňte formulář na této stránce.</div>
-
-					<div>
-						Následně vás kontaktuje APSN specialista, který se s vámi domluví na
-						dalším postupu.
-					</div>
-
-					<div>
-						Zatímco my připravujeme nabídku, vy přemýšlejte nad tím, co s nově
-						nabytými financemi uděláte.
-					</div>
-
-					<div>
-						My ještě oběháme úřady, dohodneme se s exekutorem, bankou a dalšími
-						spoluvlastníky. Vyřešíme důležitou, ale nudnou administrativu za
-						vás.
-					</div>
-
-					<div>
-						Podepisujeme! Při podpisu kupní smlouvy vám vyplatíme zálohu /část
-						kupní ceny / kupní cenu hned bez zbytečných průtahů.
-					</div>
-
-					<div>Hotovo, máme prodáno a vám doplatíme zbytek dohodnuté ceny.</div>
-				</div>
-
-				<div className='py-6 lg:py-12'>
-					<div className='flex flex-col gap-6'>
-						<div className='text-4xl font-bold text-center'>
-							Konzultace s námi je zdarma
+			<main className='container mx-auto px-3'>
+				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
+					<div className='lg:px-12'>
+						<div className='text-3xl font-bold'>
+							„Prodejte nám Váš spoluvlastnický podíl a vyřešíme vše za vás,
+							ušetříme Váš čas i námahu.“
 						</div>
 
-						<div>
-							Všechno vám vysvětlíme, navrhneme nejlepší varianty řešení, aniž
-							byste museli něco podepsat. Představíme vám, jak celý výkup
-							spoluvlastnického podílu probíhá, a provedeme vás jednotlivými
-							kroky. To vše v přátelské atmosféře. Nevěříte? Přečtěte si{' '}
-							<b className='text-[#eb9b6a]'>
-								recenze našich spokojených zákazníků.
-							</b>
+						<div className='flex flex-col lg:grid lg:grid-cols-2 text-left gap-6 lg:gap-12 lg:py-12'>
+							<div className='pt-6 lg:pt-0'>
+								Máme zkušenosti s komplexními situacemi a dbáme na zájmy
+								ostatních spoluvlastníků, protože je důležité dosáhnout vzájemné
+								dohody.
+							</div>
+
+							<div>
+								Pokud jste majitelem minoritního podílu a uvažujete o jeho
+								prodeji, rádi vám připravíme nezávaznou cenovou nabídku.
+							</div>
 						</div>
 
-						<div>
-							A pak nám nezávazně napište pomocí{' '}
-							<b className='text-[#eb9b6a]'>kontaktního formuláře.</b>
+						<div className='pt-6 lg:pt-0 text-3xl font-bold'>
+							Úspěšně řešíme i zdánlivě neřešitelné situace k plné spokojenosti
+							našich klientů. Nabízíme výkup nemovitostí s právními problémy,
+							jako jsou:
 						</div>
 
-						<div className='font-bold text-[#eb9b6a]'>
-							PRODEJ SPOLUVLASTNICKÉHO PODÍLU VZOR KUPNÍ SMLOUVY
+						<div className='flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-24 lg:py-12'>
+							<ul className='list-disc list-inside flex flex-col lg:gap-1 pt-6 lg:pt-0'>
+								<li className='text-left'>Věcná břemena</li>
+
+								<li className='text-left'>Zástavní práva</li>
+
+								<li className='text-left'>Exekuční příkazy</li>
+
+								<li className='text-left'>
+									Nedostatečně identifikovatelní vlastníci
+								</li>
+							</ul>
+
+							<ul className='list-disc list-inside flex flex-col lg:gap-1'>
+								<li className='lg:text-left'>
+									Spoluvlastníci žijící mimo Českou republiku
+								</li>
+
+								<li className='text-left'>Prodloužené dědické spory</li>
+
+								<li className='text-left'>Spory mezi spoluvlastníky</li>
+
+								<li className='text-left'>
+									Nemovitosti v majetku nesvéprávných nebo nezletilých
+								</li>
+							</ul>
+						</div>
+
+						<div className='pt-6 lg:pt-0'>
+							Novela občanského zákoníku zjednodušila proces prodeje podílů tím,
+							že omezuje předkupní právo spoluvlastníků při prodeji podílu, což
+							usnadňuje prodej spoluvlastnických podílů oproti minulosti.
+						</div>
+
+						<div className='pt-6 lg:pt-12 text-3xl font-bold'>
+							Jak probíhá výkup spoluvlastnického podílu s APSN?
+						</div>
+
+						<div className='flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-24 lg:py-12'>
+							<ul className='list-disc list-inside flex flex-col lg:gap-1 pt-6 lg:pt-0'>
+								<li className='text-left'>
+									Začnete vy tím, že vyplníte{' '}
+									<b className='text-[#eb9b6a]'>formulář</b> na našem webu
+								</li>
+
+								<li className='text-left'>
+									Náš APSN specialista vás následně kontaktuje a domluvíte se na
+									dalším postupu
+								</li>
+
+								<li className='text-left'>
+									My připravujeme nabídku, zatímco Vy zvažujete využití
+									finančních prostředků
+								</li>
+
+								<li className='text-left'>
+									Zajistíme jednání s úřady, exekutory, bankami a dalšími
+									spoluvlastníky
+								</li>
+							</ul>
+
+							<ul className='list-disc list-inside flex flex-col lg:gap-1'>
+								<li className='lg:text-left font-bold'>
+									Odebereme Vám starosti s administrativou
+								</li>
+
+								<li className='text-left'>
+									Při podpisu kupní smlouvy vám okamžitě vyplatíme zálohu nebo
+									část kupní ceny
+								</li>
+
+								<li className='text-left'>
+									A je to, prodej je dokončen a vyplatíme vám zbytek dohodnuté
+									částky
+								</li>
+
+								<li className='text-left'>Konzultace s námi jsou zdarma</li>
+
+								<li className='text-left'>
+									Vše vám důkladně vysvětlíme, navrhneme optimální řešení a
+									provedeme vás celým procesem
+								</li>
+							</ul>
+						</div>
+
+						<div className='pt-6 lg:pt-0 text-3xl font-bold'>
+							Vše Vám zdarma vysvětlíme
+						</div>
+
+						<div className='flex flex-col lg:grid gap-6 lg:gap-12 lg:py-12 py-6'>
+							<div>
+								Popište nám nezávazně situaci s Vaší nemovitostí a my Vám
+								obratem zašleme návrh řešení a cenovou nabídku. Představíme Vám,
+								ja výkup bytu nebo domu probíhá, abyste měli přesnou představu o
+								tom, co se bude dít. Jednoduše a přehledně. Stačí si přečíst
+								recenze spokojených zákazníků.
+							</div>
+
+							<div>
+								Čekáme na Vaši nezávaznou zprávu v{' '}
+								<b className='text-[#eb9b6a]'>kontaktním formuláři</b>.
+							</div>
+
+							<div>
+								<b className='text-[#eb9b6a]'>SMOUVA NA NEMOVIST - VZOR</b>
+							</div>
 						</div>
 					</div>
 				</div>
 			</main>
 
-			<Footer />
+			<div ref={footerRef}>
+				<Footer />
+			</div>
 		</>
 	);
 }

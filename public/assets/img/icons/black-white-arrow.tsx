@@ -9,6 +9,7 @@ export const BlackWhiteArrow: FunctionComponent<any> = (props) => (
 		version='1.1'
 		id='svg1'
 		xmlns='http://www.w3.org/2000/svg'
+		{...props}
 	>
 		<defs id='defs1' />
 		<circle cx='35' cy='35' r='35' fill='#101e28' id='circle1' />

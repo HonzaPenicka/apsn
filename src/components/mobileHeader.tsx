@@ -13,8 +13,8 @@ export const MobileHeader: FunctionComponent = () => {
 		setOpenMobileMenu((state) => !state);
 	}, []);
 	return (
-		<div className='lg:hidden grid'>
-			<div className='flex justify-between py-3'>
+		<div className='lg:hidden grid fixed top-0 w-full'>
+			<div className='flex justify-between py-3 bg-white'>
 				<div className='flex gap-3 px-3'>
 					<Mail />
 
@@ -28,12 +28,16 @@ export const MobileHeader: FunctionComponent = () => {
 				</div>
 			</div>
 
-			<div className='bg-black flex justify-between items-center py-1'>
-				<APSNMobile className='h-9 items-center justify-center pl-1' />
+			<div className='bg-black'>
+				<div className='container mx-auto flex justify-between items-center py-3'>
+					<a href='/'>
+						<APSNMobile className='h-9 items-center justify-center pl-1' />
+					</a>
 
-				<button onClick={toggleMobileMenu}>
-					<BurgerMenu />
-				</button>
+					<button onClick={toggleMobileMenu}>
+						<BurgerMenu />
+					</button>
+				</div>
 			</div>
 			{openMobileMenu && <MobileMenu />}
 		</div>
