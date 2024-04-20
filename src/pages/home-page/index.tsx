@@ -29,10 +29,14 @@ export default function HomePage() {
 						<h1 className='text-6xl'>Profesionální správa vaší nemovitosti</h1>
 
 						<div className='text-lg pr-36'>
-							Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-							vulputate libero et velit interdum, ac aliquet odio mattis. Class
-							aptent taciti sociosqu ad litora torquent per conubia nostra, per
-							inceptos himenaeos.
+							Jsme renomovaná firma specializující se na výkup a správu
+							nemovitostí, pozemků a podílů na nemovitostech. Naší prioritou je
+							poskytovat našim klientům komplexní a profesionální služby, které
+							usnadňují investice do realit a zajišťují jejich bezproblémové
+							řízení. Díky našemu týmu odborníků a rozsáhlé znalosti trhu jsme
+							schopni nabídnout řešení šitá na míru potřebám každého klienta.
+							Naše úsilí je vždy zaměřeno na dosažení nejlepších výsledků a
+							maximálního zhodnocení Vašich investic.
 						</div>
 
 						<div className='pt-6'>
