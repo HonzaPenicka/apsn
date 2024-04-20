@@ -13,7 +13,7 @@ export const Facebook: FunctionComponent<any> = (props) => {
 			{...props}
 		>
 			<g
-				clip-path='url(#clip0_143_187)'
+				clipPath='url(#clip0_143_187)'
 				id='g1'
 				transform='translate(0,-0.0439453)'
 			>

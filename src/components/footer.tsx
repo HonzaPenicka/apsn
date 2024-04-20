@@ -14,10 +14,10 @@ export const Footer: FunctionComponent = () => {
 			<div className='bg-gray-100 py-6 px-3'>
 				<div className='container mx-auto lg:grid lg:grid-cols-2 gap-6 lg:gap-12'>
 					<form>
-						<div className='text-4xl font-bold pb-6'>Napiště nám</div>
+						<div className='text-4xl font-bold pb-6'>Napište nám</div>
 
-						<div className='grid grid-cols-2 gap-3'>
-							<div className='flex flex-col gap-3'>
+						<div className='grid grid-cols-2 gap-6'>
+							<div className='flex flex-col gap-6'>
 								<input
 									type='text'
 									name='fullname'
@@ -35,7 +35,7 @@ export const Footer: FunctionComponent = () => {
 								/>
 							</div>
 
-							<div className='flex flex-col gap-3'>
+							<div className='flex flex-col gap-6'>
 								<input
 									type='email'
 									name=''

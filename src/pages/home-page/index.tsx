@@ -61,19 +61,43 @@ export default function HomePage() {
 								<div className='text-4xl font-medium'>Výkup nemovitostí</div>
 
 								<div>
+									Koupíme vaši nemovitost přímo, bez zprostředkování realitní
+									kanceláře
+								</div>
+
+								<div>
+									Proces prodeje nemovitosti může být dlouhý a složitý. Nalezení
+									kupce a dohoda o ceně a dalších podmínkách může trvat až rok.
+									V APSN vám nabízíme odkup nemovitosti během 24 hodin. Kupujeme
+									přímo byty i domy, nepůsobíme jako realitní agentury, ale jako
+									přímí kupci.
+								</div>
+
+								<div>
+									Úspěšně řešíme i zdánlivě neřešitelné situace k plné
+									spokojenosti našich klientů. Nabízíme výkup nemovitostí s
+									právními problémy, jako jsou:
+								</div>
+
+								<div>
 									<ul className='list-disc list-inside'>
-										<li>
-											Zajištění všech aspektů správy vaší nemovitosti, včetně
-											marketingu pro pronájem, výběru nájemníků, uzavírání
-											nájemních smluv, pravidelných kontrol a správy stížností.
-										</li>
+										<li>Věcná břemena</li>
 
-										<br className='lg:inline' />
+										<li>Zástavy</li>
+
+										<li>Exekuční rozkazy</li>
+
+										<li>Nedostatečně identifikovaní vlastníci</li>
+
+										<li>Spoluvlastníci bydlící v zahraničí</li>
+
+										<li>Komplikované dědické spory</li>
+
+										<li>Spory mezi spoluvlastníky</li>
 
 										<li>
-											Naše personalizovaná služba a inovativní technologie
-											zajišťují, že vaše nemovitost dosahuje maximálního výnosu
-											s minimálním úsilím z vaší strany.
+											Nemovitosti ve vlastnictví nesvéprávných nebo nezletilých
+											osob
 										</li>
 									</ul>
 								</div>
@@ -83,22 +107,46 @@ export default function HomePage() {
 							<div className='flex flex-col gap-12 p-12'>
 								<OrangeWhiteArrow />
 
-								<div className='text-4xl font-medium'>Výkup pozemků</div>
+								<div className='text-4xl font-medium'>Výkup podílů</div>
+
+								<div>
+									Koupíme vaši nemovitost přímo, bez zprostředkování realitní
+									kanceláře
+								</div>
+
+								<div>
+									Proces prodeje nemovitosti může být dlouhý a složitý. Nalezení
+									kupce a dohoda o ceně a dalších podmínkách může trvat až rok.
+									V APSN vám nabízíme odkup nemovitosti během 24 hodin. Kupujeme
+									přímo byty i domy, nepůsobíme jako realitní agentury, ale jako
+									přímí kupci.
+								</div>
+
+								<div>
+									Úspěšně řešíme i zdánlivě neřešitelné situace k plné
+									spokojenosti našich klientů. Nabízíme výkup nemovitostí s
+									právními problémy, jako jsou:
+								</div>
 
 								<div>
 									<ul className='list-disc list-inside'>
-										<li>
-											Komplexní finanční služby včetně vybírání nájemného,
-											správy vkladů, účetnictví a pravidelného reportování
-											majitelům.
-										</li>
+										<li>Věcná břemena</li>
 
-										<br className='lg:inline' />
+										<li>Zástavy</li>
+
+										<li>Exekuční rozkazy</li>
+
+										<li>Nedostatečně identifikovaní vlastníci</li>
+
+										<li>Spoluvlastníci bydlící v zahraničí</li>
+
+										<li>Komplikované dědické spory</li>
+
+										<li>Spory mezi spoluvlastníky</li>
 
 										<li>
-											Nabízíme transparentní přehled o finančním výkonu vaší
-											nemovitosti, což vám umožňuje učinit informovaná
-											rozhodnutí
+											Nemovitosti ve vlastnictví nesvéprávných nebo nezletilých
+											osob
 										</li>
 									</ul>
 								</div>
@@ -108,22 +156,46 @@ export default function HomePage() {
 							<div className='flex flex-col gap-12 p-12'>
 								<GrayOrangeArrow />
 
-								<div className='text-4xl font-medium'>Výkup</div>
+								<div className='text-4xl font-medium'>Výkup pozemků</div>
+
+								<div>
+									Koupíme vaši nemovitost přímo, bez zprostředkování realitní
+									kanceláře
+								</div>
+
+								<div>
+									Proces prodeje nemovitosti může být dlouhý a složitý. Nalezení
+									kupce a dohoda o ceně a dalších podmínkách může trvat až rok.
+									V APSN vám nabízíme odkup nemovitosti během 24 hodin. Kupujeme
+									přímo byty i domy, nepůsobíme jako realitní agentury, ale jako
+									přímí kupci.
+								</div>
+
+								<div>
+									Úspěšně řešíme i zdánlivě neřešitelné situace k plné
+									spokojenosti našich klientů. Nabízíme výkup nemovitostí s
+									právními problémy, jako jsou:
+								</div>
 
 								<div>
 									<ul className='list-disc list-inside'>
-										<li>
-											Komplexní finanční služby včetně vybírání nájemného,
-											správy vkladů, účetnictví a pravidelného reportování
-											majitelům.
-										</li>
+										<li>Věcná břemena</li>
 
-										<br className='lg:inline' />
+										<li>Zástavy</li>
+
+										<li>Exekuční rozkazy</li>
+
+										<li>Nedostatečně identifikovaní vlastníci</li>
+
+										<li>Spoluvlastníci bydlící v zahraničí</li>
+
+										<li>Komplikované dědické spory</li>
+
+										<li>Spory mezi spoluvlastníky</li>
 
 										<li>
-											Nabízíme transparentní přehled o finančním výkonu vaší
-											nemovitosti, což vám umožňuje učinit informovaná
-											rozhodnutí
+											Nemovitosti ve vlastnictví nesvéprávných nebo nezletilých
+											osob
 										</li>
 									</ul>
 								</div>

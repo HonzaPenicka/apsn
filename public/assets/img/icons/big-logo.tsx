@@ -12,7 +12,7 @@ export const BigLogo: FunctionComponent<any> = (props) => (
 		className=''
 		{...props}
 	>
-		<g clip-path='url(#clip0_143_193)' id='g7'>
+		<g clipPath='url(#clip0_143_193)' id='g7'>
 			<path
 				d='M 0,86.0003 V 18.3174 H 7.95285 L 52.8618,73.9148 H 48.6914 V 18.3174 H 58.39 V 86.0003 H 50.4371 L 5.5282,30.4028 h 4.1704 v 55.5975 z'
 				fill='#4d4d4d'

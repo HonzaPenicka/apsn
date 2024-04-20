@@ -15,13 +15,13 @@ export const DoubleArrowWhite: FunctionComponent<any> = (props) => (
 		<path
 			d='M 6.7071068,12.707107 12.707107,6.7071068 6.7071068,0.70710678'
 			stroke='#ffffff'
-			stroke-width='2'
+			strokeWidth='2'
 			id='path1'
 		/>
 		<path
 			d='M 0.70710678,12.707107 6.7071068,6.7071068 0.70710678,0.70710678'
 			stroke='#ffffff'
-			stroke-width='2'
+			strokeWidth='2'
 			id='path2'
 		/>
 	</svg>
