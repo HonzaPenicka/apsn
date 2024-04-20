@@ -185,7 +185,7 @@ export default function HomePage() {
 										/>
 
 										<div className='flex flex-col justify-center'>
-											<div className='font-bold'>Jirka Krupička</div>
+											<div className='font-bold'>Jiří Krupička</div>
 
 											<div>jednatel</div>
 										</div>

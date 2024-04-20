@@ -66,7 +66,7 @@ export default function Contact() {
 										className='rounded-full'
 									/>
 									<div className='flex flex-col text-left'>
-										<div className='font-bold'>Jirka Krupička</div>
+										<div className='font-bold'>Jiří Krupička</div>
 
 										<div>jednatel</div>
 									</div>

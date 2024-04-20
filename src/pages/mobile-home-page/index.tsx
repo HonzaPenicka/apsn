@@ -85,7 +85,7 @@ export default function MobileHomePage() {
 							/>
 
 							<div className='gap-1 flex flex-col'>
-								<div className='font-bold'>Jan Krupička</div>
+								<div className='font-bold'>Jiří Krupička</div>
 
 								<div>jednatel</div>
 
