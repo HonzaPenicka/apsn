@@ -15,6 +15,28 @@ export default function EstimateOfMarketValue() {
 			footerRef.current.scrollIntoView({ behavior: 'smooth' });
 		}
 	};
+
+	{
+		/*async function handleSubmit(event: Event) {
+		event.preventDefault();
+
+		const formData = new FormData(event.target);
+
+		const form = event.target as HTMLFormElement | null;
+		if (!form) {
+			// Zpracování, pokud není k dispozici formulář
+			return;
+		}
+
+		const formData = new FormData(form);
+
+		const response = await fetch('/api/odhad-trzni-hodnoty', {
+			method: 'post',
+			body: formData,
+		});
+	}*/
+	}
+
 	return (
 		<>
 			<Header />
@@ -44,7 +66,7 @@ export default function EstimateOfMarketValue() {
 				</div>
 			</div>
 
-			<main className='container mx-auto px-3 flex flex-col lg:grid lg:grid-cols-2 text-left lg:text-center gap-6 lg:gap-12'>
+			<main className='container mx-auto px-3 flex flex-col text-left lg:text-center gap-6 lg:gap-12'>
 				<div className='flex flex-col gap-6 pt-3 lg:pt-6'>
 					<div className='text-4xl font-bold lg:pt-6'>
 						Odhad ceny nemovitosti nebo spoluvlastnického podílu online
@@ -69,98 +91,131 @@ export default function EstimateOfMarketValue() {
 					</div>
 				</div>
 
-				<div className=' py-6 lg:py-12'>
-					<div className='flex flex-col gap-6 text-left border-4 rounded-lg p-3 lg:p-6 bg-[#F2F2F2]'>
-						<div className='grid grid-cols-2 gap-6 lg:gap-12'>
-							<div className='text-xl flex items-center'>Typ nemovitosti</div>
+				<div className='py-6 lg:py-0'>
+					<div className='pb-6 lg:pb-12 text-4xl font-bold '>
+						Formulář odhadu tržní hodnoty
+					</div>
 
-							<input
-								type='text'
-								name=''
-								id=''
-								placeholder='Byt, Dům, Pozemek,...'
-								className='h-12 p-3 rounded-lg bg-gray-300 '
-							/>
-						</div>
+					<div className='flex flex-col gap-6 text-left border-2 rounded-lg p-3 lg:p-6 bg-white lg:mx-24'>
+						<div className='flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 py-3 lg:py-6'>
+							<div className='flex flex-col gap-1'>
+								<div className='text-xl flex items-center'>Typ nemovitosti</div>
 
-						<div className='grid grid-cols-2 gap-6 lg:gap-12 justify-between'>
-							<div className='text-xl flex items-center'>
-								Adresa nemovitosti
+								<input
+									type='text'
+									name=''
+									id=''
+									placeholder='Byt, Dům, Pozemek,...'
+									className='h-12 p-3 rounded-lg border-2'
+								/>
 							</div>
 
-							<input
-								type='text'
-								name=''
-								id=''
-								placeholder='Adresa nemovitosti'
-								className='bg-gray-300 h-12 p-3 rounded-lg'
-							/>
-						</div>
+							<div className='flex flex-col gap-1'>
+								<div className='text-xl flex items-center'>
+									Adresa nemovitosti
+								</div>
 
-						<div className='grid grid-cols-2 gap-6 lg:gap-12 justify-between'>
-							<div className='text-xl flex items-center'>Popis nemovitosti</div>
-
-							<input
-								type='text'
-								name=''
-								id=''
-								placeholder='Vyplňte prosím informace, jako je plocha, počet místností, pater, příslušenství, i údaje o vlastnictví, jako osobní, družstevní, omezení vlastnictví v podobě zástavy, břemena, apod.'
-								className='bg-gray-300 h-36 p-3 rounded-lg'
-							/>
-						</div>
-
-						<div className='grid grid-cols-2 gap-6 lg:gap-12 justify-between'>
-							<div className='text-xl flex items-center'>
-								Připojit fotografie nemovitosti a jiné soubory
+								<input
+									type='text'
+									name=''
+									id=''
+									placeholder='Adresa nemovitosti'
+									className='h-12 p-3 rounded-lg border-2'
+								/>
 							</div>
 
-							<input
-								type='file'
-								name=''
-								id=''
-								className='bg-gray-300 h-12 p-3 rounded-lg'
-							/>
+							<div className='flex flex-col gap-1'>
+								<div className='text-xl flex items-center'>
+									Popis nemovitosti
+								</div>
+
+								<input
+									type='text'
+									name=''
+									id=''
+									placeholder='Vyplňte prosím informace, jako je plocha, počet místností, pater, příslušenství, i údaje o vlastnictví, jako osobní, družstevní, omezení vlastnictví v podobě zástavy, břemena, apod.'
+									className='h-12 p-3 rounded-lg border-2'
+								/>
+							</div>
+
+							<div className='flex flex-col gap-1'>
+								<div className='text-xl flex items-center'>
+									Připojit fotografie nemovitosti a jiné soubory
+								</div>
+
+								<input
+									type='file'
+									name=''
+									id=''
+									className='h-12 p-3 rounded-lg border-2'
+								/>
+							</div>
+
+							<div className='flex flex-col gap-1'>
+								<div className='text-xl flex items-center'>
+									Jméno a příjmení
+								</div>
+
+								<input
+									type='text'
+									name=''
+									id=''
+									placeholder='Jméno a příjmení'
+									className='h-12 p-3 rounded-lg border-2'
+								/>
+							</div>
+
+							<div className='flex flex-col gap-1'>
+								<div className='text-xl flex items-center'>E-mail</div>
+
+								<input
+									type='email'
+									name=''
+									id=''
+									placeholder='E-mailová adresa'
+									className='h-12 p-3 rounded-lg border-2'
+								/>
+							</div>
+
+							<div className='flex flex-col gap-1'>
+								<div className='text-xl flex items-center'>Telefon</div>
+
+								<input
+									type='tel'
+									name=''
+									id=''
+									placeholder='Telefonní číslo'
+									className='h-12 p-3 rounded-lg border-2'
+								/>
+							</div>
 						</div>
 
-						<div className='grid grid-cols-2 gap-6 lg:gap-12 justify-between'>
-							<div className='text-xl flex items-center'>Jméno a příjmení</div>
-
-							<input
-								type='text'
-								name=''
-								id=''
-								placeholder='Jméno a příjmení'
-								className='bg-gray-300 h-12 p-3 rounded-lg'
-							/>
-						</div>
-
-						<div className='grid grid-cols-2 gap-6 lg:gap-12 justify-between'>
-							<div className='text-xl flex items-center'>E-mail</div>
-
-							<input
-								type='email'
-								name=''
-								id=''
-								placeholder='E-mailová adresa'
-								className='bg-gray-300 h-12 p-3 rounded-lg'
-							/>
-						</div>
-
-						<div className='grid grid-cols-2 gap-6 lg:gap-12 justify-between'>
-							<div className='text-xl flex items-center'>Telefon</div>
-
-							<input
-								type='tel'
-								name=''
-								id=''
-								placeholder='Telefonní číslo'
-								className='bg-gray-300 h-12 p-3 rounded-lg'
-							/>
-						</div>
-
-						<div className='items-right flex justify-end'>
+						<div className='text-center py-3'>
 							<Button>Odeslat formulář</Button>
 						</div>
+					</div>
+				</div>
+
+				<div className='pt-6 lg:pt-0 text-3xl font-bold'>
+					Vše Vám zdarma vysvětlíme
+				</div>
+
+				<div className='flex flex-col lg:grid gap-6 lg:gap-12 pb-6 lg:pb-12'>
+					<div className='pt-6 lg:pt-0'>
+						Popište nám nezávazně situaci s Vaší nemovitostí a my Vám obratem
+						zašleme návrh řešení a cenovou nabídku. Představíme Vám, ja výkup
+						bytu nebo domu probíhá, abyste měli přesnou představu o tom, co se
+						bude dít. Jednoduše a přehledně. Stačí si přečíst recenze
+						spokojených zákazníků.
+					</div>
+
+					<div>
+						Čekáme na Vaši nezávaznou zprávu v{' '}
+						<b className='text-[#eb9b6a]'>kontaktním formuláři</b>.
+					</div>
+
+					<div>
+						<b className='text-[#eb9b6a]'>SMOUVA NA NEMOVIST - VZOR</b>
 					</div>
 				</div>
 			</main>

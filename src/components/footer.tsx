@@ -16,43 +16,43 @@ export const Footer: FunctionComponent = () => {
 					<form>
 						<div className='text-4xl font-bold pb-6'>Napište nám</div>
 
-						<div className='grid grid-cols-2 gap-6'>
-							<div className='flex flex-col gap-6'>
-								<input
-									type='text'
-									name='fullname'
-									id=''
-									placeholder='Jméno a příjmení'
-									className='bg-gray-300 py-3 lg:py-12 pl-3 rounded-lg'
-								/>
+						<div className='grid gap-6 py-3 lg:py-0'>
+							<div className='py-6 lg:py-12 px-6 lg:px-12 border-2 rounded-lg bg-white'>
+								<div className='flex flex-col gap-6 lg:gap-12'>
+									<input
+										type='text'
+										name='fullname'
+										id=''
+										placeholder='Jméno a příjmení'
+										className='py-3 pl-3 rounded-lg border-2'
+									/>
 
-								<input
-									type='text'
-									name='message'
-									id=''
-									placeholder='Zpráva...'
-									className='bg-gray-300 h-full lg:h-96 pl-3 rounded-lg'
-								/>
-							</div>
+									<input
+										type='email'
+										name=''
+										id=''
+										placeholder='Email'
+										className='py-3 pl-3 rounded-lg border-2'
+									/>
 
-							<div className='flex flex-col gap-6'>
-								<input
-									type='email'
-									name=''
-									id=''
-									placeholder='Email'
-									className='bg-gray-300 py-3 lg:py-12 pl-3 rounded-lg'
-								/>
+									<input
+										type='tel'
+										name=''
+										id=''
+										placeholder='Telefonní číslo'
+										className='py-3 pl-3 rounded-lg border-2'
+									/>
 
-								<input
-									type='tel'
-									name=''
-									id=''
-									placeholder='Telefonní číslo'
-									className='bg-gray-300 py-3 lg:py-12 pl-3 rounded-lg'
-								/>
+									<input
+										type='text'
+										name='message'
+										id=''
+										placeholder='Zpráva...'
+										className='py-3 pl-3 rounded-lg border-2'
+									/>
 
-								<Button>Odeslat</Button>
+									<Button>Odeslat</Button>
+								</div>
 							</div>
 						</div>
 					</form>
@@ -108,7 +108,7 @@ export const Footer: FunctionComponent = () => {
 
 								<div className='relative pb-3 rounded-lg'>
 									<iframe
-										className='w-full h-72 lg:h-80 ring-0 rounded-lg'
+										className='w-full h-72 lg:h-96 ring-0 rounded-lg'
 										src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7803854782765!2d14.457184876739312!3d50.071674414563994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b937bee2498e9%3A0xf9c14829f5456a67!2sBulharsk%C3%A1%20996%2F20%2C%20101%2000%20Praha%2010-Vr%C5%A1ovice!5e0!3m2!1scs!2scz!4v1713052106847!5m2!1scs!2scz'
 										loading='lazy'
 									></iframe>
