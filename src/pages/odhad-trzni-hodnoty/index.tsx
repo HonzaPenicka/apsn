@@ -62,7 +62,9 @@ export default function EstimateOfMarketValue() {
 					</div>
 				</div>
 				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
-					<Button onClick={handleButtonClick}>Vyplňte formulář</Button>
+					<Button onClick={handleButtonClick} type='button'>
+						Vyplňte formulář
+					</Button>
 				</div>
 			</div>
 
@@ -191,7 +193,7 @@ export default function EstimateOfMarketValue() {
 						</div>
 
 						<div className='text-center py-3'>
-							<Button>Odeslat formulář</Button>
+							<Button type='submit'>Odeslat formulář</Button>
 						</div>
 					</div>
 				</div>

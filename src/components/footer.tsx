@@ -1,4 +1,5 @@
-import { FunctionComponent } from 'react';
+import React, { FunctionComponent } from 'react';
+
 import { Button } from './button';
 import { Phone } from '../../public/assets/img/icons/phone';
 import { Mail } from '../../public/assets/img/icons/mail';
@@ -9,11 +10,33 @@ import { Youtube } from '../../public/assets/img/icons/youtube';
 import { Instagram } from '../../public/assets/img/icons/instagram';
 
 export const Footer: FunctionComponent = () => {
+	async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+		event.preventDefault();
+		const formData = new FormData(event.currentTarget);
+		try {
+			const response = await fetch('/api/send-email', {
+				method: 'post',
+				body: formData,
+			});
+
+			if (!response.ok) {
+				console.log('falling over');
+				throw new Error(`response status: ${response.status}`);
+			}
+			const responseData = await response.json();
+			console.log(responseData['message']);
+
+			alert('Zpráva úspěšně odeslána.');
+		} catch (error) {
+			console.log(error);
+			alert('Chyba, vyplňte a potvrďte formulář ještě jednou. Děkujeme!');
+		}
+	}
 	return (
 		<>
 			<div className='bg-gray-100 py-6 px-3'>
 				<div className='container mx-auto lg:grid lg:grid-cols-2 gap-6 lg:gap-12'>
-					<form>
+					<form onSubmit={handleSubmit}>
 						<div className='text-4xl font-bold pb-6'>Napište nám</div>
 
 						<div className='grid gap-6 py-3 lg:py-0'>
@@ -21,37 +44,47 @@ export const Footer: FunctionComponent = () => {
 								<div className='flex flex-col gap-6 lg:gap-12'>
 									<input
 										type='text'
-										name='fullname'
-										id=''
+										name='name'
+										id='form-name'
 										placeholder='Jméno a příjmení'
 										className='py-3 pl-3 rounded-lg border-2'
+										required
+										maxLength={50}
+										autoComplete='name'
 									/>
 
 									<input
 										type='email'
-										name=''
-										id=''
+										name='email'
+										id='form-email'
 										placeholder='Email'
 										className='py-3 pl-3 rounded-lg border-2'
+										required
+										maxLength={80}
+										autoComplete='email'
 									/>
 
 									<input
 										type='tel'
-										name=''
-										id=''
+										name='phone'
+										id='form-phone'
 										placeholder='Telefonní číslo'
 										className='py-3 pl-3 rounded-lg border-2'
+										required
+										maxLength={20}
+										autoComplete='phone'
 									/>
 
-									<input
-										type='text'
+									<textarea
 										name='message'
-										id=''
+										id='form-message'
 										placeholder='Zpráva...'
 										className='py-3 pl-3 rounded-lg border-2'
+										required
+										rows={5}
 									/>
 
-									<Button>Odeslat</Button>
+									<Button type='submit'>Odeslat</Button>
 								</div>
 							</div>
 						</div>
