@@ -54,7 +54,7 @@ export default function EstimateOfMarketValue() {
 							Odhad ceny nemovitosti nebo spoluvlastnického podílu online
 							zdarma. Připravíme pro vás nezávaznou nabídku, stačí vyplnit
 							formulář a my se vám ozveme. Můžete nás také kontaktovat na tel.
-							čísle <b className='text-[#eb9b6a]'>+420 111 222 333</b> nebo
+							čísle <b className='text-[#eb9b6a]'>+420 773 007 171</b> nebo
 							e-mailu <b className='text-[#eb9b6a]'>info@apsn.cz</b>. Obchody
 							úspěšně realizujeme ke spokojenosti našich klientů. Rádi i pro vás
 							najdeme to nejlepší možné řešení.
