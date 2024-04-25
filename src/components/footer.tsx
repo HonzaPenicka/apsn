@@ -72,7 +72,7 @@ export const Footer: FunctionComponent = () => {
 									<div className='flex gap-3'>
 										<Phone />
 
-										<a href='tel:+420111222333'>+420 111 222 333</a>
+										<a href='tel:+420773007171'>+420 773 007 171</a>
 									</div>
 								</div>
 
