@@ -218,7 +218,7 @@ export default function HomePage() {
 							</div>
 
 							<div className='pt-6'>
-								<a href='tel:+420111222333'>
+								<a href='tel:+420773007171'>
 									<Button>Kontaktujte nás</Button>
 								</a>
 							</div>

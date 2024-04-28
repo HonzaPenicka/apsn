@@ -54,10 +54,16 @@ export default function EstimateOfMarketValue() {
 							Odhad ceny nemovitosti nebo spoluvlastnického podílu online
 							zdarma. Připravíme pro vás nezávaznou nabídku, stačí vyplnit
 							formulář a my se vám ozveme. Můžete nás také kontaktovat na tel.
-							čísle <b className='text-[#eb9b6a]'>+420 773 007 171</b> nebo
-							e-mailu <b className='text-[#eb9b6a]'>info@apsn.cz</b>. Obchody
-							úspěšně realizujeme ke spokojenosti našich klientů. Rádi i pro vás
-							najdeme to nejlepší možné řešení.
+							čísle{' '}
+							<b className='text-[#eb9b6a]'>
+								<a href='tel:+420773007171'>+420 773 007 171</a>
+							</b>{' '}
+							nebo e-mailu{' '}
+							<b className='text-[#eb9b6a]'>
+								<a href='mailto:info@apsn.cz'>info@apsn.cz</a>
+							</b>
+							. Obchody úspěšně realizujeme ke spokojenosti našich klientů. Rádi
+							i pro vás najdeme to nejlepší možné řešení.
 						</div>
 					</div>
 				</div>
@@ -97,105 +103,95 @@ export default function EstimateOfMarketValue() {
 					<div className='pb-6 lg:pb-12 text-4xl font-bold '>
 						Formulář odhadu tržní hodnoty
 					</div>
+					<form action='https://formspree.io/f/myyrogad' method='POST'>
+						<div className='flex flex-col gap-6 text-left border-2 rounded-lg p-3 lg:p-6 bg-white lg:mx-24'>
+							<div className='flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 py-3 lg:py-6'>
+								<div className='flex flex-col gap-1'>
+									<div className='text-xl flex items-center'>
+										Typ nemovitosti
+									</div>
 
-					<div className='flex flex-col gap-6 text-left border-2 rounded-lg p-3 lg:p-6 bg-white lg:mx-24'>
-						<div className='flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 py-3 lg:py-6'>
-							<div className='flex flex-col gap-1'>
-								<div className='text-xl flex items-center'>Typ nemovitosti</div>
-
-								<input
-									type='text'
-									name=''
-									id=''
-									placeholder='Byt, Dům, Pozemek,...'
-									className='h-12 p-3 rounded-lg border-2'
-								/>
-							</div>
-
-							<div className='flex flex-col gap-1'>
-								<div className='text-xl flex items-center'>
-									Adresa nemovitosti
+									<input
+										type='TypeOfBuilding'
+										name='Typ nemovitosti'
+										id=''
+										placeholder='Byt, Dům, Pozemek,...'
+										className='h-12 p-3 rounded-lg border-2'
+									/>
 								</div>
 
-								<input
-									type='text'
-									name=''
-									id=''
-									placeholder='Adresa nemovitosti'
-									className='h-12 p-3 rounded-lg border-2'
-								/>
-							</div>
+								<div className='flex flex-col gap-1'>
+									<div className='text-xl flex items-center'>
+										Adresa nemovitosti
+									</div>
 
-							<div className='flex flex-col gap-1'>
-								<div className='text-xl flex items-center'>
-									Popis nemovitosti
+									<input
+										type='address'
+										name='Adresa'
+										id=''
+										placeholder='Adresa nemovitosti'
+										className='h-12 p-3 rounded-lg border-2'
+									/>
 								</div>
 
-								<input
-									type='text'
-									name=''
-									id=''
-									placeholder='Vyplňte prosím informace, jako je plocha, počet místností, pater, příslušenství, i údaje o vlastnictví, jako osobní, družstevní, omezení vlastnictví v podobě zástavy, břemena, apod.'
-									className='h-12 p-3 rounded-lg border-2'
-								/>
-							</div>
+								<div className='flex flex-col gap-1'>
+									<div className='text-xl flex items-center'>
+										Popis nemovitosti
+									</div>
 
-							<div className='flex flex-col gap-1'>
-								<div className='text-xl flex items-center'>
-									Připojit fotografie nemovitosti a jiné soubory
+									<input
+										type='description'
+										name='Popis'
+										id=''
+										placeholder='Vyplňte prosím informace, jako je plocha, počet místností, pater, příslušenství..'
+										className='h-12 p-3 rounded-lg border-2'
+									/>
 								</div>
 
-								<input
-									type='file'
-									name=''
-									id=''
-									className='h-12 p-3 rounded-lg border-2'
-								/>
-							</div>
+								<div className='flex flex-col gap-1'>
+									<div className='text-xl flex items-center'>
+										Jméno a příjmení
+									</div>
 
-							<div className='flex flex-col gap-1'>
-								<div className='text-xl flex items-center'>
-									Jméno a příjmení
+									<input
+										type='name'
+										name='Jméno a přijmení'
+										id=''
+										placeholder='Jméno a příjmení'
+										className='h-12 p-3 rounded-lg border-2'
+									/>
 								</div>
 
-								<input
-									type='text'
-									name=''
-									id=''
-									placeholder='Jméno a příjmení'
-									className='h-12 p-3 rounded-lg border-2'
-								/>
+								<div className='flex flex-col gap-1'>
+									<div className='text-xl flex items-center'>E-mail</div>
+
+									<input
+										type='email'
+										name='E-mail'
+										id=''
+										placeholder='E-mailová adresa'
+										className='h-12 p-3 rounded-lg border-2'
+									/>
+								</div>
+
+								<div className='flex flex-col gap-1'>
+									<div className='text-xl flex items-center'>Telefon</div>
+
+									<input
+										type='phone'
+										name='Mobil'
+										id=''
+										placeholder='Telefonní číslo'
+										className='h-12 p-3 rounded-lg border-2'
+									/>
+								</div>
 							</div>
 
-							<div className='flex flex-col gap-1'>
-								<div className='text-xl flex items-center'>E-mail</div>
-
-								<input
-									type='email'
-									name=''
-									id=''
-									placeholder='E-mailová adresa'
-									className='h-12 p-3 rounded-lg border-2'
-								/>
-							</div>
-
-							<div className='flex flex-col gap-1'>
-								<div className='text-xl flex items-center'>Telefon</div>
-
-								<input
-									type='tel'
-									name=''
-									id=''
-									placeholder='Telefonní číslo'
-									className='h-12 p-3 rounded-lg border-2'
-								/>
+							<div className='text-center py-3'>
+								<Button type='submit'>Odeslat formulář</Button>
 							</div>
 						</div>
-
-						<div className='text-center py-3'>
-							<Button type='submit'>Odeslat formulář</Button>
-						</div>
-					</div>
+					</form>
 				</div>
 
 				<div className='pt-6 lg:pt-0 text-3xl font-bold'>

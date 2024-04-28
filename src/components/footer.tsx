@@ -10,74 +10,49 @@ import { Youtube } from '../../public/assets/img/icons/youtube';
 import { Instagram } from '../../public/assets/img/icons/instagram';
 
 export const Footer: FunctionComponent = () => {
-	async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-		event.preventDefault();
-		const formData = new FormData(event.currentTarget);
-		try {
-			const response = await fetch('/api/send-email', {
-				method: 'post',
-				body: formData,
-			});
-
-			if (!response.ok) {
-				console.log('falling over');
-				throw new Error(`response status: ${response.status}`);
-			}
-			const responseData = await response.json();
-			console.log(responseData['message']);
-
-			alert('Zpráva úspěšně odeslána.');
-		} catch (error) {
-			console.log(error);
-			alert('Chyba, vyplňte a potvrďte formulář ještě jednou. Děkujeme!');
-		}
-	}
 	return (
 		<>
 			<div className='bg-gray-100 py-6 px-3'>
 				<div className='container mx-auto lg:grid lg:grid-cols-2 gap-6 lg:gap-12'>
-					<form onSubmit={handleSubmit}>
+					<form action='https://formspree.io/f/myyrogad' method='POST'>
 						<div className='text-4xl font-bold pb-6'>Napište nám</div>
 
 						<div className='grid gap-6 py-3 lg:py-0'>
 							<div className='py-6 lg:py-12 px-6 lg:px-12 border-2 rounded-lg bg-white'>
 								<div className='flex flex-col gap-6 lg:gap-12'>
 									<input
-										type='text'
-										name='name'
+										type='name'
+										name='Jméno a přijmení'
 										id='form-name'
 										placeholder='Jméno a příjmení'
 										className='py-3 pl-3 rounded-lg border-2'
 										required
 										maxLength={50}
-										autoComplete='name'
 									/>
 
 									<input
 										type='email'
-										name='email'
+										name='E-mail'
 										id='form-email'
 										placeholder='Email'
 										className='py-3 pl-3 rounded-lg border-2'
 										required
 										maxLength={80}
-										autoComplete='email'
 									/>
 
 									<input
-										type='tel'
-										name='phone'
+										type='phone'
+										name='Mobil'
 										id='form-phone'
 										placeholder='Telefonní číslo'
 										className='py-3 pl-3 rounded-lg border-2'
 										required
 										maxLength={20}
-										autoComplete='phone'
 									/>
 
 									<textarea
-										name='message'
-										id='form-message'
+										name='Zpráva'
+										id='message'
 										placeholder='Zpráva...'
 										className='py-3 pl-3 rounded-lg border-2'
 										required
