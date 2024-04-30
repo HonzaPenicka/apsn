@@ -1,8 +1,8 @@
-import { Inter } from 'next/font/google';
-import { Header } from '@/components/header';
-import { Button } from '@/components/button';
+import { ButtonOther } from '@/components/button-other';
 import { Footer } from '@/components/footer';
+import { Header } from '@/components/header';
 import { MobileHeader } from '@/components/mobileHeader';
+import { Inter } from 'next/font/google';
 import { useRef } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -38,7 +38,9 @@ export default function AboutUs() {
 					</div>
 				</div>
 				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
-					<Button onClick={handleButtonClick}>Vyplňte formulář</Button>
+					<ButtonOther onClick={handleButtonClick}>
+						Vyplňte formulář
+					</ButtonOther>
 				</div>
 			</div>
 

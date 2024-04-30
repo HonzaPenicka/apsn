@@ -6,14 +6,14 @@ interface Props {
 	type?: 'button' | 'submit' | 'reset';
 }
 
-export const Button: FunctionComponent<Props> = ({
+export const ButtonOther: FunctionComponent<Props> = ({
 	children,
 	onClick,
 	type,
 }) => {
 	return (
 		<button
-			className='bg-[#EB9B6A] text-white rounded-lg px-3 py-3 font-bold'
+			className='bg-[#6aeb9b] text-white rounded-lg px-3 py-3 font-bold'
 			onClick={onClick}
 			type={type}
 		>

@@ -1,11 +1,11 @@
-import { Inter } from 'next/font/google';
-import { MobileHeader } from '@/components/mobileHeader';
 import { Button } from '@/components/button';
-import { DoubleArrow } from '../../../public/assets/img/icons/double-arrow-black';
-import { CrystalLogo } from '../../../public/assets/img/icons/crystalLogo';
 import { Footer } from '@/components/footer';
-import { DoubleArrowWhite } from '../../../public/assets/img/icons/double-arrow-white';
+import { MobileHeader } from '@/components/mobileHeader';
+import { Inter } from 'next/font/google';
 import { useRef } from 'react';
+import { CrystalLogo } from '../../../public/assets/img/icons/crystalLogo';
+import { DoubleArrow } from '../../../public/assets/img/icons/double-arrow-black';
+import { DoubleArrowWhite } from '../../../public/assets/img/icons/double-arrow-white';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -41,23 +41,29 @@ export default function MobileHomePage() {
 					<div className='text-4xl font-bold py-6 text-left'>Služby</div>
 
 					<div className=' flex flex-col gap-6 pb-6'>
-						<div className='flex justify-between bg-[#EB9B6A] p-3 rounded-lg'>
-							<div className='text-base font-bold'>Správa nemovitostí</div>
+						<a href='vykup-nemovitosti'>
+							<div className='flex justify-between bg-[#EB9B6A] p-3 rounded-lg'>
+								<div className='text-base font-bold'>Výkup nemovitostí</div>
 
-							<DoubleArrow />
-						</div>
+								<DoubleArrow />
+							</div>
+						</a>
 
-						<div className='flex justify-between bg-[#D9D9D9] p-3 rounded-lg'>
-							<div className='text-base font-bold'>Finanční správa</div>
+						<a href='vykup-podilu'>
+							<div className='flex justify-between bg-[#D9D9D9] p-3 rounded-lg'>
+								<div className='text-base font-bold'>Výkup podílů</div>
 
-							<DoubleArrow />
-						</div>
+								<DoubleArrow />
+							</div>
+						</a>
 
-						<div className='flex justify-between bg-[#101E28] text-white p-3 rounded-lg'>
-							<div className='text-base font-bold'>Poradenství</div>
+						<a href='/vykup-pozemku'>
+							<div className='flex justify-between bg-[#101E28] text-white p-3 rounded-lg'>
+								<div className='text-base font-bold'>Výkup pozemků</div>
 
-							<DoubleArrowWhite />
-						</div>
+								<DoubleArrowWhite />
+							</div>
+						</a>
 					</div>
 
 					<div className=' bg-gradient-to-b from-white to-gray-100 pb-6'>
