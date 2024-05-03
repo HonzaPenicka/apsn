@@ -1,12 +1,12 @@
-import { Inter } from 'next/font/google';
-import { Header } from '@/components/header';
-import { BlackWhiteArrow } from '../../../public/assets/img/icons/black-white-arrow';
-import { OrangeWhiteArrow } from '../../../public/assets/img/icons/orange-white-arrow';
 import { Button } from '@/components/button';
-import { GrayOrangeArrow } from '../../../public/assets/img/icons/gray-orange-arrow';
-import { CrystalLogo } from '../../../public/assets/img/icons/crystalLogo';
 import { Footer } from '@/components/footer';
+import { Header } from '@/components/header';
+import { Inter } from 'next/font/google';
 import { useRef } from 'react';
+import { BlackWhiteArrow } from '../../../public/assets/img/icons/black-white-arrow';
+import { CrystalLogo } from '../../../public/assets/img/icons/crystalLogo';
+import { GrayOrangeArrow } from '../../../public/assets/img/icons/gray-orange-arrow';
+import { OrangeWhiteArrow } from '../../../public/assets/img/icons/orange-white-arrow';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -279,18 +279,18 @@ export default function HomePage() {
 								<CrystalLogo />
 
 								<div>
-									S více než 6 lety zkušeností v oblasti nemovitostí, Jan je
-									vizionář, který ASPN vedl k výšinám úspěchu. Jeho hluboké
-									porozumění trhu a vášeň pro kvalitu služeb jsou základem naší
-									agentury.
+									Poslední tři roky jsem se aktivně věnoval nákupu a renovaci
+									nemovitostí s cílem prodeje nebo pronájmu. Součástí mé práce
+									je také správa nemovitostí pro klienty, což považuji za
+									nedílnou součást mého profesního přístupu.
 								</div>
 
 								<div className='flex justify-between'>
 									<div className='flex gap-6'>
 										<img
-											src='/assets/img/pics/jirka.jpg'
+											src='/assets/img/pics/gabin.jpeg'
 											alt='jednatel Jirka'
-											className='rounded-full'
+											className='rounded-full w-24'
 										/>
 
 										<div className='flex flex-col justify-center'>

@@ -84,18 +84,18 @@ export default function Contact() {
 							<CrystalLogo />
 
 							<div>
-								S více než 6 lety zkušeností v oblasti nemovitostí, Jan je
-								vizionář, který ASPN vedl k výšinám úspěchu. Jeho hluboké
-								porozumění trhu a vášeň pro kvalitu služeb jsou základem naší
-								agentury.
+								Poslední tři roky jsem se aktivně věnoval nákupu a renovaci
+								nemovitostí s cílem prodeje nebo pronájmu. Součástí mé práce je
+								také správa nemovitostí pro klienty, což považuji za nedílnou
+								součást mého profesního přístupu.
 							</div>
 
 							<div className='flex justify-between'>
 								<div className='flex gap-6'>
 									<img
-										src='/assets/img/pics/jirka.jpg'
-										alt='jednatel Gabriel'
-										className='rounded-full'
+										src='/assets/img/pics/gabin.jpeg'
+										alt='jednatel Jirka'
+										className='rounded-full w-24'
 									/>
 
 									<div className='flex flex-col text-left'>

@@ -109,17 +109,17 @@ export default function MobileHomePage() {
 
 						<div className='pb-6 text-base'>
 							<div>
-								S více než 6 lety zkušeností v oblasti nemovitostí, Jan je
-								vizionář, který ASPN vedl k výšinám úspěchu. Jeho hluboké
-								porozumění trhu a vášeň pro kvalitu služeb jsou základem naší
-								agentury.
+								Poslední tři roky jsem se aktivně věnoval nákupu a renovaci
+								nemovitostí s cílem prodeje nebo pronájmu. Součástí mé práce je
+								také správa nemovitostí pro klienty, což považuji za nedílnou
+								součást mého profesního přístupu.
 							</div>
 						</div>
 						<div className='flex gap-6'>
 							<img
-								src='/assets/img/pics/jirka.jpg'
-								alt='jednatel'
-								className='rounded-full'
+								src='/assets/img/pics/gabin.jpeg'
+								alt='jednatel Jirka'
+								className='rounded-full w-24'
 							/>
 
 							<div className='gap-1 flex flex-col'>
