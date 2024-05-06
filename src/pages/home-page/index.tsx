@@ -24,7 +24,7 @@ export default function HomePage() {
 			<Header />
 
 			<main className='hidden lg:grid pt-36'>
-				<div className='container mx-auto flex'>
+				<div className='flex px-12'>
 					<div className='bg-[#101E28] bg-fixed py-24 text-white flex flex-col gap-12 px-12'>
 						<h1 className='text-6xl'>Profesionální správa vaší nemovitosti</h1>
 
@@ -50,7 +50,7 @@ export default function HomePage() {
 					/>
 				</div>
 
-				<div className='pt-24 pb-12 container mx-auto flex flex-col gap-12'>
+				<div className='pt-24 pb-12 flex flex-col gap-12 px-12'>
 					<h2 className='text-4xl font-bold'>Služby</h2>
 
 					<div className='grid grid-cols-3 gap-12'>
@@ -227,7 +227,7 @@ export default function HomePage() {
 					</div>
 				</div>
 				<div className='bg-gray-100 pb-12'>
-					<div className='container mx-auto gap-12 flex flex-col'>
+					<div className='gap-12 flex flex-col px-12'>
 						<div className='flex flex-col gap-6'>
 							<div className='text-4xl font-bold pt-12'>
 								Sjednejte si schůzku
@@ -311,7 +311,7 @@ export default function HomePage() {
 					</div>
 				</div>
 
-				<div className='container mx-auto px-3'>
+				<div className='container mx-auto px-12'>
 					<div className='pt-6 lg:pt-12 text-left lg:text-center'>
 						<div className='lg:px-12'>
 							<div className='pt-6 lg:pt-0 text-3xl font-bold'>

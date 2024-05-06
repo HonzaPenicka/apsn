@@ -1,19 +1,19 @@
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 
-import { Button } from './button';
-import { Phone } from '../../public/assets/img/icons/phone';
-import { Mail } from '../../public/assets/img/icons/mail';
 import { BigLogo } from '../../public/assets/img/icons/big-logo';
-import { LinkedIn } from '../../public/assets/img/icons/linked-In';
 import { Facebook } from '../../public/assets/img/icons/facebook';
-import { Youtube } from '../../public/assets/img/icons/youtube';
 import { Instagram } from '../../public/assets/img/icons/instagram';
+import { LinkedIn } from '../../public/assets/img/icons/linked-In';
+import { Mail } from '../../public/assets/img/icons/mail';
+import { Phone } from '../../public/assets/img/icons/phone';
+import { Youtube } from '../../public/assets/img/icons/youtube';
+import { Button } from './button';
 
 export const Footer: FunctionComponent = () => {
 	return (
 		<>
-			<div className='bg-gray-100 py-6 px-3'>
-				<div className='container mx-auto lg:grid lg:grid-cols-2 gap-6 lg:gap-12'>
+			<div className='bg-gray-100 py-6 px-3 lg:px-12'>
+				<div className='lg:grid lg:grid-cols-2 gap-6 lg:gap-12'>
 					<form action='https://formspree.io/f/myyrogad' method='POST'>
 						<div className='text-4xl font-bold pb-6'>Napište nám</div>
 
@@ -127,7 +127,7 @@ export const Footer: FunctionComponent = () => {
 				</div>
 			</div>
 
-			<div className='flex flex-col lg:flex-row justify-between gap-12 py-6 px-3 container mx-auto items-center'>
+			<div className='flex flex-col lg:flex-row justify-between gap-12 py-6 px-3 lg:px-12 items-center'>
 				<div className='justify-center items-center'>
 					<BigLogo className='w-full' />
 				</div>
