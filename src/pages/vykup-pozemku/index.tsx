@@ -22,7 +22,7 @@ export default function LandToBuy() {
 			<MobileHeader />
 
 			<div className='py-6 lg:py-12 bg-[#F2F2F2] px-3 mt-36'>
-				<div className='container mx-auto'>
+				<div className='px-3 lg:px-12'>
 					<div className='flex flex-col gap-6 lg:gap-12 lg:px-24 text-left lg:text-center'>
 						<div className='text-4xl font-bold'>Výkup pozemků</div>
 
@@ -43,7 +43,7 @@ export default function LandToBuy() {
 				</div>
 			</div>
 
-			<main className='container mx-auto px-3'>
+			<main className='lg:px-12 px-3'>
 				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
 					<div className='lg:px-12'>
 						<div className='text-3xl font-bold'>

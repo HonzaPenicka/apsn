@@ -1,9 +1,9 @@
 import { FunctionComponent, useCallback, useState } from 'react';
 
-import { Phone } from '../../public/assets/img/icons/phone';
-import { Mail } from '../../public/assets/img/icons/mail';
-import { BurgerMenu } from '../../public/assets/img/icons/burger-menu';
 import { APSNMobile } from '../../public/assets/img/icons/apsnMobile';
+import { BurgerMenu } from '../../public/assets/img/icons/burger-menu';
+import { Mail } from '../../public/assets/img/icons/mail';
+import { Phone } from '../../public/assets/img/icons/phone';
 import { MobileMenu } from './mobileMenu';
 
 export const MobileHeader: FunctionComponent = () => {
@@ -13,7 +13,7 @@ export const MobileHeader: FunctionComponent = () => {
 		setOpenMobileMenu((state) => !state);
 	}, []);
 	return (
-		<div className='lg:hidden grid fixed top-0 w-full'>
+		<div className='lg:hidden grid fixed top-0 w-full z-10'>
 			<div className='flex justify-between py-3 bg-white'>
 				<div className='flex gap-3 px-3'>
 					<Mail />
@@ -28,7 +28,7 @@ export const MobileHeader: FunctionComponent = () => {
 				</div>
 			</div>
 
-			<div className='bg-black'>
+			<div className='bg-black px-3'>
 				<div className='container mx-auto flex justify-between items-center py-3'>
 					<a href='/'>
 						<APSNMobile className='h-9 items-center justify-center pl-1' />

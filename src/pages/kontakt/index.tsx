@@ -23,8 +23,8 @@ export default function Contact() {
 
 			<MobileHeader />
 
-			<div className='py-6 lg:pb-12 bg-[#F2F2F2] px-3 mt-36'>
-				<div className='container mx-auto'>
+			<div className='py-6 lg:pb-12 bg-[#F2F2F2] mt-36'>
+				<div className='px-3 lg:px-12'>
 					<div className='flex flex-col gap-6 lg:gap-12 lg:px-24 text-left lg:text-center'>
 						<div className='text-4xl font-bold'>Seznamte se s našim týmem</div>
 
@@ -50,7 +50,7 @@ export default function Contact() {
 					</ButtonOther>
 				</div>
 			</div>
-			<main className='container mx-auto px-3'>
+			<main className='lg:px-12 px-3'>
 				<div className='pt-6 lg:pt-12 text-left'>
 					<div className='flex flex-col lg:grid lg:grid-cols-2 gap-12'>
 						<div className='gap-6 flex flex-col py-6 px-12 border-2 rounded-lg'>
@@ -112,7 +112,7 @@ export default function Contact() {
 					</div>
 				</div>
 			</main>
-			<div className='container mx-auto px-3'>
+			<div className='lg:px-12 px-3'>
 				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
 					<div className='lg:px-12'>
 						<div className='pt-6 lg:pt-0 text-3xl font-bold'>

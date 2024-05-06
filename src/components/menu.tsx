@@ -11,20 +11,9 @@ export const Menu: FunctionComponent = () => {
 
 	return (
 		<>
-			<nav className='flex gap-6 text-lg'>
+			<nav className='flex gap-6 text-lg pt-5'>
 				<a href='/' className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>
 					Domů
-				</a>
-
-				<a href='o-nas' className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>
-					O nás
-				</a>
-
-				<a
-					href='/kontakt'
-					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
-				>
-					Kontakt
 				</a>
 
 				<a
@@ -43,6 +32,17 @@ export const Menu: FunctionComponent = () => {
 					</button>
 					<div className='relative'>{openMenuServices && <MenuServices />}</div>
 				</div>
+
+				<a href='o-nas' className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>
+					O nás
+				</a>
+
+				<a
+					href='/kontakt'
+					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
+				>
+					Kontakt
+				</a>
 			</nav>
 		</>
 	);

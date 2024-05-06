@@ -6,7 +6,7 @@ import { Menu } from './menu';
 
 export const Header: FunctionComponent = () => {
 	return (
-		<div className='hidden lg:grid py-12 items-center fixed bg-white w-full top-0 z-20'>
+		<div className='hidden lg:grid py-6 items-center fixed bg-white w-full top-0 z-20'>
 			<div className='bg-white flex justify-between w-full px-12'>
 				<a href='/'>
 					<APSNDesktop className='h-12' />
@@ -14,7 +14,7 @@ export const Header: FunctionComponent = () => {
 
 				<Menu />
 
-				<div className='flex gap-3'>
+				<div className='flex gap-3 pt-5'>
 					<Phone />
 
 					<a className='' href='tel:+420773007171'>

@@ -228,12 +228,12 @@ export default function HomePage() {
 				</div>
 				<div className='bg-gray-100 pb-12'>
 					<div className='gap-12 flex flex-col px-12'>
-						<div className='flex flex-col gap-6'>
+						<div className='flex flex-col gap-6 text-center'>
 							<div className='text-4xl font-bold pt-12'>
 								Sjednejte si schůzku
 							</div>
 
-							<div className='w-4/12'>
+							<div className=''>
 								Nabízíme pečlivě vybraný výběr nemovitostí, které představují
 								vrchol rezidenčních a komerčních nemovitostí. Každá nabídka je
 								vybírána s ohledem na nejvyšší standardy kvality, umístění a

@@ -2,8 +2,8 @@ import { FunctionComponent } from 'react';
 
 export const Instagram: FunctionComponent<any> = (props) => (
 	<svg
-		width='50'
-		height='50'
+		width='40'
+		height='40'
 		viewBox='0 0 25 25'
 		fill='none'
 		version='1.1'

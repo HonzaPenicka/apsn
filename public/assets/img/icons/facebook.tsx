@@ -3,8 +3,8 @@ import { FunctionComponent } from 'react';
 export const Facebook: FunctionComponent<any> = (props) => {
 	return (
 		<svg
-			width='50'
-			height='50'
+			width='40'
+			height='40'
 			viewBox='0 0 24 24'
 			fill='none'
 			version='1.1'

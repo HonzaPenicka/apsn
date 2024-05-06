@@ -114,7 +114,7 @@ export const Footer: FunctionComponent = () => {
 									</div>
 								</div>
 
-								<div className='relative pb-3 rounded-lg'>
+								<div className='relative pb-3 rounded-lg z-0'>
 									<iframe
 										className='w-full h-72 lg:h-96 ring-0 rounded-lg'
 										src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7803854782765!2d14.457184876739312!3d50.071674414563994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b937bee2498e9%3A0xf9c14829f5456a67!2sBulharsk%C3%A1%20996%2F20%2C%20101%2000%20Praha%2010-Vr%C5%A1ovice!5e0!3m2!1scs!2scz!4v1713052106847!5m2!1scs!2scz'
@@ -145,7 +145,7 @@ export const Footer: FunctionComponent = () => {
 					</div>
 				</div>
 			</div>
-			<div className='text-[#ACACAC] text-center py-6 lg:py-12'>
+			<div className='text-[#ACACAC] text-center py-6 lg:py-6'>
 				©Všechna práva vyhrazena. ASPN, s.r.o.
 			</div>
 		</>

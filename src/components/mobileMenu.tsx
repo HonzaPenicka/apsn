@@ -15,17 +15,6 @@ export const MobileMenu: FunctionComponent = () => {
 					Domů
 				</a>
 
-				<a href='/o-nas' className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>
-					O nás
-				</a>
-
-				<a
-					href='/kontakt'
-					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
-				>
-					Kontakt
-				</a>
-
 				<a
 					href='/odhad-trzni-hodnoty'
 					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
@@ -40,6 +29,17 @@ export const MobileMenu: FunctionComponent = () => {
 					Výkup
 				</button>
 				{openMobileServices && <MobileMenuServices />}
+
+				<a href='/o-nas' className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'>
+					O nás
+				</a>
+
+				<a
+					href='/kontakt'
+					className='hover:text-[#eb9b6a] active:text-[#eb9b6a]'
+				>
+					Kontakt
+				</a>
 			</div>
 		</nav>
 	);

@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react';
 export const BigLogo: FunctionComponent<any> = (props) => (
 	<svg
 		width='509'
-		height='86'
+		height='50'
 		viewBox='0 0 509 86'
 		fill='none'
 		version='1.1'

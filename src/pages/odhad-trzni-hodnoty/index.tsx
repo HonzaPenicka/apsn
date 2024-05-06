@@ -45,7 +45,7 @@ export default function EstimateOfMarketValue() {
 			<MobileHeader />
 
 			<div className='py-6 lg:py-12 bg-[#F2F2F2] px-3 mt-36'>
-				<div className='container mx-auto'>
+				<div className='px-3 lg:px-12'>
 					<div className='flex flex-col gap-6 lg:gap-12 lg:px-24 text-left lg:text-center'>
 						<div className='text-4xl font-bold'>
 							Odhad ceny nemovitosti nebo spoluvlastnického podílu
@@ -75,7 +75,7 @@ export default function EstimateOfMarketValue() {
 				</div>
 			</div>
 
-			<main className='container mx-auto px-3 flex flex-col text-left lg:text-center gap-6 lg:gap-12'>
+			<main className='lg:px-12 px-3 flex flex-col text-left lg:text-center gap-6 lg:gap-12'>
 				<div className='flex flex-col gap-6 pt-3 lg:pt-6'>
 					<div className='text-4xl font-bold lg:pt-6'>
 						Odhad ceny nemovitosti nebo spoluvlastnického podílu online
