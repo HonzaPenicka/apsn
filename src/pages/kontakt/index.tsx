@@ -44,7 +44,7 @@ export default function Contact() {
 						</div>
 					</div>
 				</div>
-				<div className='pt-6 lg:pt-12 text-left lg:text-center'>
+				<div className='pt-6 lg:pt-12 text-left lg:text-center px-3'>
 					<ButtonOther onClick={handleButtonClick}>
 						Vyplňte formulář
 					</ButtonOther>
