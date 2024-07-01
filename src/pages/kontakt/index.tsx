@@ -63,11 +63,14 @@ export default function Contact() {
 							</div>
 							<div className='flex justify-between'>
 								<div className='flex gap-6'>
-									<img
-										src='/assets/img/pics/jirka.jpg'
-										alt='jednatel Jirka'
-										className='rounded-full'
-									/>
+									{/* TODO - change img */}
+									{/*
+										<img
+											src='/assets/img/pics/jirka.jpg'
+											alt='jednatel Jirka'
+											className='rounded-full'
+										/>
+										*/}
 									<div className='flex flex-col text-left'>
 										<div className='font-bold'>Jiří Krupička</div>
 

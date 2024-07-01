@@ -254,11 +254,14 @@ export default function HomePage() {
 
 								<div className='flex justify-between'>
 									<div className='flex gap-6'>
+										{/* TODO - change img */}
+										{/*
 										<img
 											src='/assets/img/pics/jirka.jpg'
 											alt='jednatel Jirka'
 											className='rounded-full'
 										/>
+										*/}
 
 										<div className='flex flex-col justify-center'>
 											<div className='font-bold'>Jiří Krupička</div>

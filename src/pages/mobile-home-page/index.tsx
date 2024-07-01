@@ -84,11 +84,14 @@ export default function MobileHomePage() {
 							</div>
 						</div>
 						<div className='flex gap-6'>
-							<img
-								src='/assets/img/pics/jirka.jpg'
-								alt='jednatel'
-								className='rounded-full'
-							/>
+							{/* TODO - change img */}
+							{/*
+								<img
+									src='/assets/img/pics/jirka.jpg'
+									alt='jednatel Jirka'
+									className='rounded-full'
+								/>
+							*/}
 
 							<div className='gap-1 flex flex-col'>
 								<div className='font-bold'>Jiří Krupička</div>
