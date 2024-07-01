@@ -56,7 +56,7 @@ export default function Contact() {
 						<div className='gap-6 flex flex-col py-6 px-12 border-2 rounded-lg'>
 							<CrystalLogo />
 							<div>
-								S více než 6 lety zkušeností v oblasti nemovitostí, Jan je
+								S více než 6 lety zkušeností v oblasti nemovitostí, Jiří je
 								vizionář, který ASPN vedl k výšinám úspěchu. Jeho hluboké
 								porozumění trhu a vášeň pro kvalitu služeb jsou základem naší
 								agentury.

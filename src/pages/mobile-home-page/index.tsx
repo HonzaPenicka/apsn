@@ -77,7 +77,7 @@ export default function MobileHomePage() {
 
 						<div className='pb-6 text-base'>
 							<div>
-								S více než 6 lety zkušeností v oblasti nemovitostí, Jan je
+								S více než 6 lety zkušeností v oblasti nemovitostí, Jiří je
 								vizionář, který ASPN vedl k výšinám úspěchu. Jeho hluboké
 								porozumění trhu a vášeň pro kvalitu služeb jsou základem naší
 								agentury.
