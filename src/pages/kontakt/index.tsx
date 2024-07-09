@@ -56,10 +56,14 @@ export default function Contact() {
 						<div className='gap-6 flex flex-col py-6 px-12 border-2 rounded-lg'>
 							<CrystalLogo />
 							<div>
-								S více než 6 lety zkušeností v oblasti nemovitostí, Jiří je
-								vizionář, který ASPN vedl k výšinám úspěchu. Jeho hluboké
-								porozumění trhu a vášeň pro kvalitu služeb jsou základem naší
-								agentury.
+								Jiří Krupička, zakladatel společnosti APSN, se pohybuje v
+								realitách skoro deset let. Zkušenosti získal v komerčním
+								oddělení mezinárodní společnosti Engel@Voelkers, kde se věnoval
+								naceňování a prodeji činžovních domů. Na základě těchto
+								zkušeností a zájmu o realitní trh založil APSN, zaměřenou na
+								vyhledávání investičních nemovitostí pro klienty. Mezi jeho
+								hobby patří analýza českého realitního trhu a šachy. Sílu nabírá
+								v sauně a s rodinou na horách.
 							</div>
 							<div className='flex justify-between'>
 								<div className='flex gap-6'>
