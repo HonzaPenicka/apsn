@@ -250,10 +250,10 @@ export default function HomePage() {
 									realitách skoro deset let. Zkušenosti získal v komerčním
 									oddělení mezinárodní společnosti Engel@Voelkers, kde se
 									věnoval naceňování a prodeji činžovních domů. Na základě
-									těchto zkušeností a zájmu o realitní trh založil APSN,
-									zaměřenou na vyhledávání investičních nemovitostí pro klienty.
-									Mezi jeho hobby patří analýza českého realitního trhu a šachy.
-									Sílu nabírá v sauně a s rodinou na horách.
+									těchto zkušeností založil APSN, zaměřenou na vyhledávání
+									investičních nemovitostí. Mezi jeho hobby patří analýza
+									českého realitního trhu a šachy. Sílu nabírá v sauně a s
+									rodinou na horách.
 								</div>
 
 								<div className='flex justify-between'>
@@ -270,7 +270,7 @@ export default function HomePage() {
 										<div className='flex flex-col justify-center'>
 											<div className='font-bold'>Jiří Krupička</div>
 
-											<div>jednatel</div>
+											<div>jednatel, obchodní ředitel</div>
 										</div>
 									</div>
 
@@ -296,7 +296,7 @@ export default function HomePage() {
 									<div className='flex gap-6'>
 										<img
 											src='/assets/img/pics/gabin.jpeg'
-											alt='jednatel Jirka'
+											alt='jednatel Gabriel'
 											className='rounded-full w-24'
 										/>
 

@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react';
 
+import Link from 'next/link';
 import { BigLogo } from '../../public/assets/img/icons/big-logo';
 import { Facebook } from '../../public/assets/img/icons/facebook';
 import { Instagram } from '../../public/assets/img/icons/instagram';
@@ -135,14 +136,17 @@ export const Footer: FunctionComponent = () => {
 				<div className='flex px-3 gap-12 lg:gap-24 items-center justify-center'>
 					<LinkedIn />
 
-					<Facebook />
+					<Link href='https://www.facebook.com/share/REeaikdyiefdrUxx/?mibextid=LQQJ4d'>
+						<Facebook />
+					</Link>
+
 					<div className='pt-3'>
 						<Youtube className='' />
 					</div>
 
-					<div>
+					<Link href='https://www.instagram.com/apsn_sro?igsh=OXNoczNmcmpmc2oz&utm_source=qr'>
 						<Instagram />
-					</div>
+					</Link>
 				</div>
 			</div>
 			<div className='text-[#ACACAC] text-center py-6 lg:py-6'>

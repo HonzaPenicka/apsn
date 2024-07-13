@@ -66,7 +66,7 @@ export default function MobileHomePage() {
 						</a>
 					</div>
 
-					<div className=' bg-gradient-to-b from-white to-gray-100 pb-6'>
+					<div className='bg-gradient-to-b from-white to-gray-100 pb-6 p-3 rounded-xl'>
 						<div className='pb-6'>
 							<div className='bg-[#E0E0DF] h-px'></div>
 						</div>
@@ -81,10 +81,9 @@ export default function MobileHomePage() {
 								realitách skoro deset let. Zkušenosti získal v komerčním
 								oddělení mezinárodní společnosti Engel@Voelkers, kde se věnoval
 								naceňování a prodeji činžovních domů. Na základě těchto
-								zkušeností a zájmu o realitní trh založil APSN, zaměřenou na
-								vyhledávání investičních nemovitostí pro klienty. Mezi jeho
-								hobby patří analýza českého realitního trhu a šachy. Sílu nabírá
-								v sauně a s rodinou na horách.
+								zkušeností založil APSN, zaměřenou na vyhledávání investičních
+								nemovitostí. Mezi jeho hobby patří analýza českého realitního
+								trhu a šachy. Sílu nabírá v sauně a s rodinou na horách.
 							</div>
 						</div>
 						<div className='flex gap-6'>
@@ -100,7 +99,7 @@ export default function MobileHomePage() {
 							<div className='gap-1 flex flex-col'>
 								<div className='font-bold'>Jiří Krupička</div>
 
-								<div>jednatel</div>
+								<div>jednatel, obchodní ředitel</div>
 
 								<a href='mailto:krupicka.jiri@aspn.cz'>
 									<Button>Sjednat schůzku</Button>
@@ -109,7 +108,7 @@ export default function MobileHomePage() {
 						</div>
 					</div>
 
-					<div className=' bg-gradient-to-b from-white to-gray-100 pb-6'>
+					<div className=' bg-gradient-to-b from-white to-gray-100 pb-6 p-3 rounded-xl'>
 						<div className='pb-3 pt-6'>
 							<CrystalLogo />
 						</div>
@@ -125,7 +124,7 @@ export default function MobileHomePage() {
 						<div className='flex gap-6'>
 							<img
 								src='/assets/img/pics/gabin.jpeg'
-								alt='jednatel Jirka'
+								alt='jednatel Gabriel'
 								className='rounded-full w-24'
 							/>
 

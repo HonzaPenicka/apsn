@@ -53,17 +53,16 @@ export default function Contact() {
 			<main className='lg:px-12 px-3'>
 				<div className='pt-6 lg:pt-12 text-left'>
 					<div className='flex flex-col lg:grid lg:grid-cols-2 gap-12'>
-						<div className='gap-6 flex flex-col py-6 px-12 border-2 rounded-lg'>
+						<div className='gap-6 flex flex-col py-6 p-3 lg:px-12 border-2 rounded-lg'>
 							<CrystalLogo />
 							<div>
 								Jiří Krupička, zakladatel společnosti APSN, se pohybuje v
 								realitách skoro deset let. Zkušenosti získal v komerčním
 								oddělení mezinárodní společnosti Engel@Voelkers, kde se věnoval
 								naceňování a prodeji činžovních domů. Na základě těchto
-								zkušeností a zájmu o realitní trh založil APSN, zaměřenou na
-								vyhledávání investičních nemovitostí pro klienty. Mezi jeho
-								hobby patří analýza českého realitního trhu a šachy. Sílu nabírá
-								v sauně a s rodinou na horách.
+								zkušeností založil APSN, zaměřenou na vyhledávání investičních
+								nemovitostí. Mezi jeho hobby patří analýza českého realitního
+								trhu a šachy. Sílu nabírá v sauně a s rodinou na horách.
 							</div>
 							<div className='flex justify-between'>
 								<div className='flex gap-6'>
@@ -78,7 +77,7 @@ export default function Contact() {
 									<div className='flex flex-col text-left'>
 										<div className='font-bold'>Jiří Krupička</div>
 
-										<div>jednatel</div>
+										<div>jednatel, obchodní ředitel</div>
 									</div>
 								</div>
 							</div>
@@ -87,7 +86,7 @@ export default function Contact() {
 							</a>
 						</div>
 
-						<div className='gap-6 flex flex-col py-6 px-12 border-2 rounded-lg'>
+						<div className='gap-6 flex flex-col py-6  p-3 lg:px-12 border-2 rounded-lg'>
 							<CrystalLogo />
 
 							<div>
@@ -101,7 +100,7 @@ export default function Contact() {
 								<div className='flex gap-6'>
 									<img
 										src='/assets/img/pics/gabin.jpeg'
-										alt='jednatel Jirka'
+										alt='jednatel Gabriel'
 										className='rounded-full w-24'
 									/>
 
@@ -109,6 +108,76 @@ export default function Contact() {
 										<div className='font-bold'>Gabriel Radovský</div>
 
 										<div>jednatel</div>
+									</div>
+								</div>
+							</div>
+							<a href='mailto:radovsky.gabriel@aspn.cz'>
+								<Button>Sjednat schůzku</Button>
+							</a>
+						</div>
+
+						<div className='gap-6 flex flex-col py-6  p-3 lg:px-12 border-2 rounded-lg'>
+							<CrystalLogo />
+
+							<div>
+								Sandra má přes dva roky praxe v řízení realitních projektů.
+								Efektivně plánuje, řídí a dokončuje projekty včas, v rámci
+								rozpočtu a s důrazem na kvalitu. Vedla týmy a prokázala
+								vynikající organizační a komunikační dovednosti. Specializuje se
+								na tržní analýzy.
+							</div>
+
+							<div className='flex justify-between lg:pt-12'>
+								<div className='flex gap-6'>
+									{/* TODO - change img */}
+									{/*
+										<img
+											src='/assets/img/pics/jirka.jpg'
+											alt='jednatel Jirka'
+											className='rounded-full'
+										/>
+										*/}
+
+									<div className='flex flex-col text-left'>
+										<div className='font-bold'>Sandra Nguyenová</div>
+
+										<div>projektová Manažerka</div>
+									</div>
+								</div>
+							</div>
+							<a href='mailto:radovsky.gabriel@aspn.cz'>
+								<Button>Sjednat schůzku</Button>
+							</a>
+						</div>
+
+						<div className='gap-6 flex flex-col py-6  p-3 lg:px-12 border-2 rounded-lg'>
+							<CrystalLogo />
+
+							<div>
+								Andrei je spisovatel, stratég a senior copywriter působící v
+								Bukurešti, Bratislavě, Vídni, Berlíně a Praze. Pracoval pro
+								značky jako Fiat, ŠKODA, Bayer, LEGO, META, SAMSUNG a McDonalds.
+								Má bohaté zkušenosti s tvorbou kampaní včetně VR a AI. Získal
+								ocenění Cannes Lions a D&AD Pencils for Writing. Kromě psaní se
+								věnuje matematice a fyzice a má cambridgeský titul z angličtiny
+								na úrovni rodilého mluvčího.
+							</div>
+
+							<div className='flex justify-between'>
+								<div className='flex gap-6'>
+									{/* TODO - change img */}
+									{/*
+										<img
+											src='/assets/img/pics/jirka.jpg'
+											alt='jednatel Jirka'
+											className='rounded-full'
+										/>
+										*/}
+
+									<div className='flex flex-col text-left'>
+										<div className='font-bold'>Andrei Gurău</div>
+
+										<div>marketing</div>
 									</div>
 								</div>
 							</div>
