@@ -139,13 +139,13 @@ export default function Contact() {
 										*/}
 
 									<div className='flex flex-col text-left'>
-										<div className='font-bold'>Sandra Nguyenová</div>
+										<div className='font-bold'>Mgr. Sandra Nguyenová</div>
 
-										<div>projektová Manažerka</div>
+										<div>ředitelka APSN, projektová manažerka</div>
 									</div>
 								</div>
 							</div>
-							<a href='mailto:radovsky.gabriel@aspn.cz'>
+							<a href='mailto:nguyenova.sandra@aspn.cz'>
 								<Button>Sjednat schůzku</Button>
 							</a>
 						</div>
@@ -181,7 +181,66 @@ export default function Contact() {
 									</div>
 								</div>
 							</div>
-							<a href='mailto:radovsky.gabriel@aspn.cz'>
+							<a href='mailto:gurau.andrei@gmail.com'>
+								<Button>Sjednat schůzku</Button>
+							</a>
+						</div>
+
+						<div className='gap-6 flex flex-col py-6  p-3 lg:px-12 border-2 rounded-lg'>
+							<CrystalLogo />
+
+							<div>
+								AKL jsme založili s cílem vrátit do advokacie tradiční hodnoty. Neúčtujeme nic bez vašeho souhlasu. Ke každé službě obdržíte vysvětlení. Nikdy neuslyšíte "nelze", vždy hledáme řešení, i když šance na úspěch jsou malé.
+							</div>
+
+							<div className='flex justify-between'>
+								<div className='flex gap-6'>
+									{/* TODO - change img */}
+									{/*
+										<img
+											src='/assets/img/pics/jirka.jpg'
+											alt='jednatel Jirka'
+											className='rounded-full'
+										/>
+										*/}
+
+									<div className='flex flex-col text-left'>
+										<div className='font-bold'>Mgr. Dominik Lokvenc</div>
+
+										<div>advokát</div>
+									</div>
+								</div>
+							</div>
+							<a href='mailto:dominik@aklangova.cz'>
+								<Button>Sjednat schůzku</Button>
+							</a>
+						</div>
+
+						<div className='gap-6 flex flex-col py-6  p-3 lg:px-12 border-2 rounded-lg'>
+							<CrystalLogo />
+
+							<div>
+							Hajk, finanční a hypoteční specialista, má přes pět let zkušeností. Vystudoval mezinárodní vztahy a diplomacii, což mu poskytlo široký přehled. Zaměřuje se na komplexní a individuální řešení pro své klienty.							</div>
+
+							<div className='flex justify-between'>
+								<div className='flex gap-6'>
+									{/* TODO - change img */}
+									{/*
+										<img
+											src='/assets/img/pics/jirka.jpg'
+											alt='jednatel Jirka'
+											className='rounded-full'
+										/>
+										*/}
+
+									<div className='flex flex-col text-left'>
+										<div className='font-bold'>Bc. Hajk Kočaryan</div>
+
+										<div>finanční a hypoteční specialista</div>
+									</div>
+								</div>
+							</div>
+							<a href='mailto:hajk.kocaryan@kobos.cz'>
 								<Button>Sjednat schůzku</Button>
 							</a>
 						</div>
