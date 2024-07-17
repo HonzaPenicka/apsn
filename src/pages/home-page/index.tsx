@@ -1,18 +1,18 @@
+import { useState, useRef, FC } from 'react';
 import { Button } from '@/components/button';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Inter } from 'next/font/google';
-import { useRef } from 'react';
 import { BlackWhiteArrow } from '../../../public/assets/img/icons/black-white-arrow';
-import { CrystalLogo } from '../../../public/assets/img/icons/crystalLogo';
 import { GrayOrangeArrow } from '../../../public/assets/img/icons/gray-orange-arrow';
 import { OrangeWhiteArrow } from '../../../public/assets/img/icons/orange-white-arrow';
-import Dialog from '@/components/dialog';
+import { Dialog } from '@/components/dialog';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function HomePage() {
+const HomePage: FC = () => {
   const footerRef = useRef<HTMLDivElement>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(true);  // State to manage dialog open/close
 
   const handleButtonClick = () => {
     if (footerRef.current) {
@@ -20,9 +20,17 @@ export default function HomePage() {
     }
   };
 
+  const closeDialog = () => {
+    setIsDialogOpen(false);  // Function to close the dialog
+  };
+
   return (
     <>
-      <Dialog />
+    	<Dialog 
+        isOpen={isDialogOpen} 
+        onClose={closeDialog}
+      />
+
       <Header />
       <main className="hidden lg:grid pt-36">
         <div className="flex px-12">
@@ -112,3 +120,5 @@ export default function HomePage() {
     </>
   );
 }
+
+export default HomePage;
