@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, FC } from 'react';
 import { Button } from '@/components/button';
 import { Footer } from '@/components/footer';
 import { MobileHeader } from '@/components/mobileHeader';
@@ -6,12 +6,12 @@ import { Inter } from 'next/font/google';
 import { CrystalLogo } from '../../../public/assets/img/icons/crystalLogo';
 import { DoubleArrow } from '../../../public/assets/img/icons/double-arrow-black';
 import { DoubleArrowWhite } from '../../../public/assets/img/icons/double-arrow-white';
-import Dialog from '@/components/dialog';
+import { Dialog } from '@/components/dialog';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function MobileHomePage() {
-  const footerRef = useRef<HTMLDivElement>(null!);
+const MobileHomePage: FC = () => {
+  const footerRef = useRef<HTMLDivElement>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(true);
 
   const handleButtonClick = () => {
@@ -24,14 +24,14 @@ export default function MobileHomePage() {
     setIsDialogOpen(false);
   };
 
+
   return (
     <>
       <MobileHeader />
       
-      <Dialog 
+	  <Dialog 
         isOpen={isDialogOpen} 
-        onClose={closeDialog} 
-        onContact={handleButtonClick} 
+        onClose={closeDialog}
       />
 
       <main className="lg:hidden">
@@ -165,3 +165,5 @@ export default function MobileHomePage() {
     </>
   );
 }
+
+export default MobileHomePage;
