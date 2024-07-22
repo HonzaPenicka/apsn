@@ -29,10 +29,12 @@ const MobileHomePage: FC = () => {
     <>
       <MobileHeader />
       
-	  <Dialog 
+      {/*
+      <Dialog 
         isOpen={isDialogOpen} 
         onClose={closeDialog}
       />
+      */}
 
       <main className="lg:hidden">
         <div className='container mx-auto px-3 pt-28'>
