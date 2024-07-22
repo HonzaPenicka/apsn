@@ -26,10 +26,12 @@ const HomePage: FC = () => {
 
   return (
     <>
-    	<Dialog 
+    	{/*
+      <Dialog 
         isOpen={isDialogOpen} 
         onClose={closeDialog}
       />
+      */}
 
       <Header />
       <main className="hidden lg:grid pt-36">
