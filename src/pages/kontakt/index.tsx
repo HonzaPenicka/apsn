@@ -96,13 +96,16 @@ export default function Contact() {
 								součást mého profesního přístupu.
 							</div>
 
-							<div className='flex justify-between'>
+							<div className='flex justify-between lg:pt-12'>
 								<div className='flex gap-6'>
+									{/* TODO - change img */}
+									{/*
 									<img
 										src='/assets/img/pics/gabin.jpeg'
 										alt='jednatel Gabriel'
 										className='rounded-full w-24'
 									/>
+									*/}
 
 									<div className='flex flex-col text-left'>
 										<div className='font-bold'>Gabriel Radovský</div>
@@ -190,7 +193,10 @@ export default function Contact() {
 							<CrystalLogo />
 
 							<div>
-								AKL jsme založili s cílem vrátit do advokacie tradiční hodnoty. Neúčtujeme nic bez vašeho souhlasu. Ke každé službě obdržíte vysvětlení. Nikdy neuslyšíte "nelze", vždy hledáme řešení, i když šance na úspěch jsou malé.
+								AKL jsme založili s cílem vrátit do advokacie tradiční hodnoty.
+								Neúčtujeme nic bez vašeho souhlasu. Ke každé službě obdržíte
+								vysvětlení. Nikdy neuslyšíte "nelze", vždy hledáme řešení, i
+								když šance na úspěch jsou malé.
 							</div>
 
 							<div className='flex justify-between'>
@@ -220,7 +226,11 @@ export default function Contact() {
 							<CrystalLogo />
 
 							<div>
-							Hajk, finanční a hypoteční specialista, má přes pět let zkušeností. Vystudoval mezinárodní vztahy a diplomacii, což mu poskytlo široký přehled. Zaměřuje se na komplexní a individuální řešení pro své klienty.							</div>
+								Hajk, finanční a hypoteční specialista, má přes pět let
+								zkušeností. Vystudoval mezinárodní vztahy a diplomacii, což mu
+								poskytlo široký přehled. Zaměřuje se na komplexní a individuální
+								řešení pro své klienty.{' '}
+							</div>
 
 							<div className='flex justify-between'>
 								<div className='flex gap-6'>
