@@ -89,11 +89,11 @@ const MobileHomePage: FC = () => {
 							<div>
 								Jiří Krupička, zakladatel společnosti APSN, se pohybuje v
 								realitách skoro deset let. Zkušenosti získal v komerčním
-								oddělení mezinárodní společnosti Engel@Voelkers, kde se věnoval
-								naceňování a prodeji činžovních domů. Na základě těchto
-								zkušeností založil APSN, zaměřenou na vyhledávání investičních
-								nemovitostí. Mezi jeho hobby patří analýza českého realitního
-								trhu a šachy. Sílu nabírá v sauně a s rodinou na horách.
+								oddělení mezinárodní společnosti, kde se věnoval naceňování a
+								prodeji činžovních domů. Na základě těchto zkušeností založil
+								APSN, zaměřenou na vyhledávání investičních nemovitostí. Mezi
+								jeho hobby patří analýza českého realitního trhu a šachy. Sílu
+								nabírá v sauně a s rodinou na horách.
 							</div>
 						</div>
 						<div className='flex gap-6'>
