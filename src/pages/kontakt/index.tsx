@@ -81,7 +81,7 @@ export default function Contact() {
 									</div>
 								</div>
 							</div>
-							<a href='mailto:krupicka.jiri@aspn.cz'>
+							<a href='mailto:krupicka.jiri@apsn.cz'>
 								<Button>Sjednat schůzku</Button>
 							</a>
 						</div>
@@ -114,7 +114,7 @@ export default function Contact() {
 									</div>
 								</div>
 							</div>
-							<a href='mailto:radovsky.gabriel@aspn.cz'>
+							<a href='mailto:radovsky.gabriel@apsn.cz'>
 								<Button>Sjednat schůzku</Button>
 							</a>
 						</div>
@@ -148,7 +148,7 @@ export default function Contact() {
 									</div>
 								</div>
 							</div>
-							<a href='mailto:nguyenova.sandra@aspn.cz'>
+							<a href='mailto:nguyenova.sandra@apsn.cz'>
 								<Button>Sjednat schůzku</Button>
 							</a>
 						</div>
