@@ -94,8 +94,8 @@ export const Footer: FunctionComponent = () => {
 										</div>
 
 										<div className='font-normal'>
-											<a href='mailto:krupicka.jiri@aspn.cz'>
-												krupicka.jiri@aspn.cz
+											<a href='mailto:krupicka.jiri@apsn.cz'>
+												krupicka.jiri@apsn.cz
 											</a>
 										</div>
 									</div>
@@ -108,8 +108,8 @@ export const Footer: FunctionComponent = () => {
 										</div>
 
 										<div className='font-normal'>
-											<a href='mailto:radovsky.gabriel@aspn.cz'>
-												radovsky.gabriel@aspn.cz
+											<a href='mailto:radovsky.gabriel@apsn.cz'>
+												radovsky.gabriel@apsn.cz
 											</a>
 										</div>
 									</div>
@@ -150,7 +150,7 @@ export const Footer: FunctionComponent = () => {
 				</div>
 			</div>
 			<div className='text-[#ACACAC] text-center py-6 lg:py-6'>
-				©Všechna práva vyhrazena. ASPN, s.r.o.
+				©Všechna práva vyhrazena. apsn, s.r.o.
 			</div>
 		</>
 	);
