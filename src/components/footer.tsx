@@ -85,6 +85,18 @@ export const Footer: FunctionComponent = () => {
 									</div>
 								</div>
 
+								<div className='flex flex-col lg:flex-row justify-between text-xl'>
+									<div className='flex gap-3'>
+										IČ:
+										<p>21177953</p>
+									</div>
+
+									<div className='flex gap-3'>
+										DIČ:
+										<p>CZ21177953</p>
+									</div>
+								</div>
+
 								<div className='flex justify-between py-3'>
 									<div className='flex flex-col gap-0.5'>
 										<div className='font-bold'>Jiří Krupička</div>
@@ -150,7 +162,7 @@ export const Footer: FunctionComponent = () => {
 				</div>
 			</div>
 			<div className='text-[#ACACAC] text-center py-6 lg:py-6'>
-				©Všechna práva vyhrazena. apsn, s.r.o.
+				©Všechna práva vyhrazena APSN s.r.o.
 			</div>
 		</>
 	);

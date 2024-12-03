@@ -36,8 +36,12 @@ const MobileHomePage: FC = () => {
 
 			<main className='lg:hidden'>
 				<div className='container mx-auto px-3 pt-28'>
-					<div className='py-6'>
-						<div className='text-4xl font-bold'>Investujte chytře s APSN</div>
+					<div className='py-6 flex flex-col gap-4'>
+						<h1 className='text-4xl'>Agentura pro správu nemovitostí s.r.o.</h1>
+
+						<div className='text-2xl font-bold'>
+							Profesionální správa vaší nemovitosti
+						</div>
 					</div>
 
 					<div className='pb-3 text-lg font-bold'>

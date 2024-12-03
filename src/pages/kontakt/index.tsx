@@ -193,39 +193,6 @@ export default function Contact() {
 							<CrystalLogo />
 
 							<div>
-								AKL jsme založili s cílem vrátit do advokacie tradiční hodnoty.
-								Neúčtujeme nic bez vašeho souhlasu. Ke každé službě obdržíte
-								vysvětlení. Nikdy neuslyšíte "nelze", vždy hledáme řešení, i
-								když šance na úspěch jsou malé.
-							</div>
-
-							<div className='flex justify-between'>
-								<div className='flex gap-6'>
-									{/* TODO - change img */}
-									{/*
-										<img
-											src='/assets/img/pics/jirka.jpg'
-											alt='jednatel Jirka'
-											className='rounded-full'
-										/>
-										*/}
-
-									<div className='flex flex-col text-left'>
-										<div className='font-bold'>Mgr. Dominik Lokvenc</div>
-
-										<div>advokát</div>
-									</div>
-								</div>
-							</div>
-							<a href='mailto:dominik@aklangova.cz'>
-								<Button>Sjednat schůzku</Button>
-							</a>
-						</div>
-
-						<div className='gap-6 flex flex-col py-6  p-3 lg:px-12 border-2 rounded-lg'>
-							<CrystalLogo />
-
-							<div>
 								Hajk, finanční a hypoteční specialista, má přes pět let
 								zkušeností. Vystudoval mezinárodní vztahy a diplomacii, což mu
 								poskytlo široký přehled. Zaměřuje se na komplexní a individuální
