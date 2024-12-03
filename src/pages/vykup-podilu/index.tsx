@@ -169,10 +169,6 @@ export default function PercentToBuy() {
 								Čekáme na Vaši nezávaznou zprávu v{' '}
 								<b className='text-[#eb9b6a]'>kontaktním formuláři</b>.
 							</div>
-
-							<div>
-								<b className='text-[#eb9b6a]'>SMOUVA NA NEMOVIST - VZOR</b>
-							</div>
 						</div>
 					</div>
 				</div>
