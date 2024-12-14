@@ -71,7 +71,7 @@ export const Footer: FunctionComponent = () => {
 
 						<div className='grid'>
 							<div className='flex flex-col gap-3 font-bold'>
-								<div className='flex flex-col lg:flex-row justify-between text-xl'>
+								<div className='flex flex-col md:flex-row justify-between text-xl'>
 									<div className='flex gap-3'>
 										<Mail />
 
@@ -85,7 +85,7 @@ export const Footer: FunctionComponent = () => {
 									</div>
 								</div>
 
-								<div className='flex flex-col lg:flex-row justify-between text-xl'>
+								<div className='flex flex-col md:flex-row justify-between text-xl'>
 									<div className='flex gap-3'>
 										IČ:
 										<p>21177953</p>
@@ -97,7 +97,7 @@ export const Footer: FunctionComponent = () => {
 									</div>
 								</div>
 
-								<div className='flex justify-between py-3'>
+								<div className='flex justify-between py-3 gap-1'>
 									<div className='flex flex-col gap-0.5'>
 										<div className='font-bold'>Jiří Krupička</div>
 
@@ -112,7 +112,7 @@ export const Footer: FunctionComponent = () => {
 										</div>
 									</div>
 
-									<div className='flex flex-col gap-0.5'>
+									<div className='flex flex-col gap-0.5 text-right'>
 										<div className='font-bold'>Gabriel Radovský</div>
 
 										<div className='font-normal'>

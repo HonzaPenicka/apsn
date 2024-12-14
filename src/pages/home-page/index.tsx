@@ -64,8 +64,10 @@ const HomePage: FC = () => {
 					<div className='grid grid-cols-3 gap-12'>
 						<div className='bg-[#eb9b6a] rounded-lg'>
 							<div className='flex flex-col gap-12 p-12'>
-								<BlackWhiteArrow />
-								<div className='text-4xl font-medium'>Výkup nemovitostí</div>
+								<a href='/vykup-nemovitosti' className='flex flex-col gap-12'>
+									<BlackWhiteArrow />
+									<div className='text-4xl font-medium'>Výkup nemovitostí</div>
+								</a>
 								<div>
 									Koupíme vaši nemovitost přímo, bez zprostředkování realitní
 									kanceláře
@@ -101,8 +103,10 @@ const HomePage: FC = () => {
 						</div>
 						<div className='bg-[#E0E0DF] lg:mb-12 rounded-lg'>
 							<div className='flex flex-col gap-12 p-12'>
-								<OrangeWhiteArrow />
-								<div className='text-4xl font-medium'>Výkup podílů</div>
+								<a className='flex flex-col gap-12' href='/vykup-podilu'>
+									<OrangeWhiteArrow />
+									<div className='text-4xl font-medium'>Výkup podílů</div>
+								</a>
 								<div>
 									Koupíme vaši nemovitost přímo, bez zprostředkování realitní
 									kanceláře
@@ -138,8 +142,10 @@ const HomePage: FC = () => {
 						</div>
 						<div className='bg-[#101E28] text-white lg:mb-12 rounded-lg'>
 							<div className='flex flex-col gap-12 p-12'>
-								<GrayOrangeArrow />
-								<div className='text-4xl font-medium'>Výkup pozemků</div>
+								<a className='flex flex-col gap-12' href='/vykup-pozemku'>
+									<GrayOrangeArrow />
+									<div className='text-4xl font-medium'>Výkup pozemků</div>
+								</a>
 								<div>
 									Koupíme vaši nemovitost přímo, bez zprostředkování realitní
 									kanceláře
