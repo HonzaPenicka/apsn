@@ -84,24 +84,22 @@ const HomePage: FC = () => {
 									spokojenosti našich klientů. Nabízíme výkup nemovitostí s
 									právními problémy, jako jsou:
 								</div>
-								<div>
-									<ul className='list-disc list-inside'>
-										<li>Věcná břemena</li>
-										<li>Zástavy</li>
-										<li>Exekuční rozkazy</li>
-										<li>Nedostatečně identifikovaní vlastníci</li>
-										<li>Spoluvlastníci bydlící v zahraničí</li>
-										<li>Komplikované dědické spory</li>
-										<li>Spory mezi spoluvlastníky</li>
-										<li>
-											Nemovitosti ve vlastnictví nesvéprávných nebo nezletilých
-											osob
-										</li>
-									</ul>
+								<div className='grid'>
+									<b>Věcná břemena</b>
+									<b>Zástavy</b>
+									<b>Exekuční rozkazy</b>
+									<b>Nedostatečně identifikovaní vlastníci</b>
+									<b>Spoluvlastníci bydlící v zahraničí</b>
+									<b>Komplikované dědické spory</b>
+									<b>Spory mezi spoluvlastníky</b>
+									<b>
+										Nemovitosti ve vlastnictví nesvéprávných nebo nezletilých
+										osob
+									</b>
 								</div>
 							</div>
 						</div>
-						<div className='bg-[#E0E0DF] lg:mb-12 rounded-lg'>
+						<div className='bg-[#E0E0DF]  rounded-lg'>
 							<div className='flex flex-col gap-12 p-12'>
 								<a className='flex flex-col gap-12' href='/vykup-podilu'>
 									<OrangeWhiteArrow />
@@ -123,24 +121,22 @@ const HomePage: FC = () => {
 									spokojenosti našich klientů. Nabízíme výkup nemovitostí s
 									právními problémy, jako jsou:
 								</div>
-								<div>
-									<ul className='list-disc list-inside'>
-										<li>Věcná břemena</li>
-										<li>Zástavy</li>
-										<li>Exekuční rozkazy</li>
-										<li>Nedostatečně identifikovaní vlastníci</li>
-										<li>Spoluvlastníci bydlící v zahraničí</li>
-										<li>Komplikované dědické spory</li>
-										<li>Spory mezi spoluvlastníky</li>
-										<li>
-											Nemovitosti ve vlastnictví nesvéprávných nebo nezletilých
-											osob
-										</li>
-									</ul>
+								<div className='grid'>
+									<b>Věcná břemena</b>
+									<b>Zástavy</b>
+									<b>Exekuční rozkazy</b>
+									<b>Nedostatečně identifikovaní vlastníci</b>
+									<b>Spoluvlastníci bydlící v zahraničí</b>
+									<b>Komplikované dědické spory</b>
+									<b>Spory mezi spoluvlastníky</b>
+									<b>
+										Nemovitosti ve vlastnictví nesvéprávných nebo nezletilých
+										osob
+									</b>
 								</div>
 							</div>
 						</div>
-						<div className='bg-[#101E28] text-white lg:mb-12 rounded-lg'>
+						<div className='bg-[#101E28] text-white  rounded-lg'>
 							<div className='flex flex-col gap-12 p-12'>
 								<a className='flex flex-col gap-12' href='/vykup-pozemku'>
 									<GrayOrangeArrow />
@@ -162,20 +158,18 @@ const HomePage: FC = () => {
 									spokojenosti našich klientů. Nabízíme výkup nemovitostí s
 									právními problémy, jako jsou:
 								</div>
-								<div>
-									<ul className='list-disc list-inside'>
-										<li>Věcná břemena</li>
-										<li>Zástavy</li>
-										<li>Exekuční rozkazy</li>
-										<li>Nedostatečně identifikovaní vlastníci</li>
-										<li>Spoluvlastníci bydlící v zahraničí</li>
-										<li>Komplikované dědické spory</li>
-										<li>Spory mezi spoluvlastníky</li>
-										<li>
-											Nemovitosti ve vlastnictví nesvéprávných nebo nezletilých
-											osob
-										</li>
-									</ul>
+								<div className='grid'>
+									<b>Věcná břemena</b>
+									<b>Zástavy</b>
+									<b>Exekuční rozkazy</b>
+									<b>Nedostatečně identifikovaní vlastníci</b>
+									<b>Spoluvlastníci bydlící v zahraničí</b>
+									<b>Komplikované dědické spory</b>
+									<b>Spory mezi spoluvlastníky</b>
+									<b>
+										Nemovitosti ve vlastnictví nesvéprávných nebo nezletilých
+										osob
+									</b>
 								</div>
 							</div>
 						</div>

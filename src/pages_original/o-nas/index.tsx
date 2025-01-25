@@ -63,7 +63,7 @@ export default function AboutUs() {
 								dosažení nejlepších výsledků a maximálního zhodnocení Vašich
 								investic.
 							</div>
-							<img src='/assets/img/pics/team.jpg' alt='team' />
+							<img src='/assets/img/pics/team.jpeg' alt='team' />
 						</div>
 
 						<div className='pt-6 lg:pt-0 text-3xl font-bold'>

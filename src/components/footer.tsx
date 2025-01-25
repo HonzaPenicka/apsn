@@ -145,7 +145,7 @@ export const Footer: FunctionComponent = () => {
 					<BigLogo className='w-full' />
 				</div>
 
-				<div className='flex px-3 gap-12 lg:gap-24 items-center justify-center'>
+				{/*<div className='flex px-3 gap-12 lg:gap-24 items-center justify-center'>
 					<LinkedIn />
 
 					<Link href='https://www.facebook.com/share/REeaikdyiefdrUxx/?mibextid=LQQJ4d'>
@@ -159,7 +159,7 @@ export const Footer: FunctionComponent = () => {
 					<Link href='https://www.instagram.com/apsn_sro?igsh=OXNoczNmcmpmc2oz&utm_source=qr'>
 						<Instagram />
 					</Link>
-				</div>
+				</div>*/}
 			</div>
 			<div className='text-[#ACACAC] text-center py-6 lg:py-6'>
 				©Všechna práva vyhrazena APSN s.r.o.
